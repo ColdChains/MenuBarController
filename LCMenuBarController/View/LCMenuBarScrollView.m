@@ -6,8 +6,9 @@
 //
 
 #import "LCMenuBarScrollView.h"
-#import "LCMenuBarDelegate.h"
 #import "LCMenuBarView.h"
+
+#import "LCMenuBarDelegate.h"
 
 @implementation LCMenuBarScrollView
 

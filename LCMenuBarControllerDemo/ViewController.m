@@ -1,13 +1,11 @@
 //
 //  ViewController.m
-//  LCMenuBarController
+//  LCMenuBarDemo
 //
-//  Created by lax on 2022/5/20.
+//  Created by 郭永志 on 2022/7/13.
 //
 
 #import "ViewController.h"
-#import "LCMenuBar.h"
-
 #import "Tab1ViewController.h"
 #import "Tab2ViewController.h"
 
@@ -29,10 +27,10 @@
     menuBar.delegate = self;
     self.menuBar = menuBar;
     
-    LCMenuBar *footerView = [[LCMenuBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
+    UILabel *footerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
     footerView.backgroundColor = [UIColor redColor];
-    footerView.dataArray = @[@"FooterTab1", @"FooterTab2"];
-    footerView.delegate = self;
+    footerView.text = @"FooterView";
+    footerView.textAlignment = NSTextAlignmentCenter;
     self.footerView = footerView;
     
     Tab1ViewController *vc1 = [[Tab1ViewController alloc] init];
@@ -42,5 +40,6 @@
     self.viewControllers = @[vc1, vc2];
     
 }
+
 
 @end

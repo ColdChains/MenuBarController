@@ -19,7 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.headerScrollTopMargin = 44;
+    // 设置顶部停留间距
+    self.headerScrollTopMargin = 0;
+    // 关闭切换动画
     self.scrollAnimated = NO;
     
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 200)];
@@ -40,15 +42,5 @@
     vc3.view.backgroundColor = [UIColor cyanColor];
     self.viewControllers = @[vc1, vc2, vc3];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

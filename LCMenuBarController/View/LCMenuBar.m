@@ -7,7 +7,7 @@
 
 #import "LCMenuBar.h"
 
-@interface LCMenuBar ()
+@interface LCMenuBar () 
 
 // 样式
 @property (nonatomic) LCMenuBarStyle style;
@@ -139,7 +139,7 @@
     _lineViewCornerRadius = lineView.layer.cornerRadius;
     _lineViewColor = [UIColor clearColor];
     _lineViewAutoWidth = NO;
-    _lineView.hidden = !self.showLineView;
+    _showLineView = YES;
     [self addSubview:lineView];
     [self sendSubviewToBack:lineView];
     [self initLineViewFrame];

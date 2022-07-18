@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.h
-//  LCMenuBarController
+//  LCMenuBarControllerDemo
 //
-//  Created by lax on 2022/5/20.
+//  Created by lax on 2022/7/18.
 //
 
 #import <UIKit/UIKit.h>

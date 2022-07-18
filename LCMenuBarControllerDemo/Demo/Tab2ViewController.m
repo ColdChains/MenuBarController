@@ -7,6 +7,7 @@
 
 #import "Tab2ViewController.h"
 #import <Masonry/Masonry.h>
+#import "RootViewController.h"
 
 @interface Tab2ViewController ()
 
@@ -14,9 +15,9 @@
 
 @implementation Tab2ViewController
 
-// 状态栏样式
+// 修改状态栏样式
 - (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
+    return UIStatusBarStyleDefault;
 }
 
 - (void)viewDidLoad {
@@ -28,13 +29,17 @@
         make.edges.mas_equalTo(0);
     }];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    label.text = @"SubScrollView";
-    label.textAlignment = NSTextAlignmentCenter;
-    [scrollView addSubview:label];
+    UIButton *button = [[UIButton alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    [button setTitle:@"SubScrollView" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    [scrollView addSubview:button];
     
     scrollView.tag = 100;
     scrollView.contentSize = UIScreen.mainScreen.bounds.size;
+}
+
+- (void)buttonAction {
+    
 }
 
 @end

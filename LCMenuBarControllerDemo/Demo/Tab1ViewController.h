@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LCMenuBarController.h"
+#import "LCMenuBarController/LCMenuBarController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -5,6 +5,9 @@
 //  Created by lax on 2021/9/10.
 //
 
+#import "LCMenuBar.h"
+#import "LCMenuBarView.h"
+
 #import <UIKit/UIKit.h>
 #import "LCMenuBarScrollView.h"
 

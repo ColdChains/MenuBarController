@@ -33,7 +33,7 @@
     scrollView.contentSize = UIScreen.mainScreen.bounds.size;
 }
 
-- (UIScrollView *)menuBarScrollView {
+- (UIScrollView *)lcScrollView {
     return [self.view viewWithTag:100];
 }
 
