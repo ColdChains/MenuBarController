@@ -40,7 +40,7 @@ Controller with menu bar that can slide and handles UIScrollView Nested.
   #
 
   # spec.license      = "MIT"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE.md" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Controller with menu bar that can slide and handles UIScrollView Nested.
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "LCMenuBarController/**/*.{h,m}"
+  spec.source_files  = "MenuBarController/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

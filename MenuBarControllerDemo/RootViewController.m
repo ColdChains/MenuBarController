@@ -1,6 +1,6 @@
 //
 //  RootViewController.m
-//  LCCustomPresentController
+//  MenuBarController
 //
 //  Created by lax on 2022/7/11.
 //
