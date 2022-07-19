@@ -1,0 +1,6 @@
+framework module Pods_MenuBarController {
+  umbrella header "Pods-MenuBarController-umbrella.h"
+
+  export *
+  module * { export * }
+}
