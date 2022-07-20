@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 Controller with menu bar that can slide and handles UIScrollView Nested.
                    DESC
 
-  spec.homepage     = "https://github.com/ColdChains/MenuBarController.git"
+  spec.homepage     = "https://github.com/ColdChains/MenuBarController"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 

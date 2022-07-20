@@ -35,6 +35,7 @@
 		183091A72885063B0063EFF8 /* LCMenuBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830919A2885063A0063EFF8 /* LCMenuBarController.m */; };
 		183091A92885085E0063EFF8 /* LCMenuBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 183091A82885085E0063EFF8 /* LCMenuBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		183C3B6528863FB90013576A /* MenuBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 183C3B6428863DE20013576A /* MenuBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1882599B28879B8700BEFB3C /* LCMenuBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830919A2885063A0063EFF8 /* LCMenuBarController.m */; };
 		5DC0DBD8ACC03740CC4DF604 /* Pods_MenuBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA35EDFDB63D565FD57DCB0A /* Pods_MenuBarController.framework */; };
 		FE322013C8790BC0F64BDBC8 /* Pods_MenuBarControllerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48F23D71E4C14C9C897D19A /* Pods_MenuBarControllerDemo.framework */; };
 /* End PBXBuildFile section */
@@ -442,6 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1882599B28879B8700BEFB3C /* LCMenuBarController.m in Sources */,
 				18309175288504F90063EFF8 /* ViewController.m in Sources */,
 				18309177288504F90063EFF8 /* ContentViewController.m in Sources */,
 				18309153288504BD0063EFF8 /* AppDelegate.m in Sources */,
