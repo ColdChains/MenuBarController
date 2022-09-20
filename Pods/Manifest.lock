@@ -1,16 +1,16 @@
 PODS:
-  - Masonry (1.1.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
-  - Masonry
+  - SnapKit (= 4.2.0)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Masonry
+  trunk:
+    - SnapKit
 
 SPEC CHECKSUMS:
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: d11fb2738931bcaa610e0f2bce31a8145d09dc57
+PODFILE CHECKSUM: c380dbdabd2bee9a0338139259b00abd14f201eb
 
 COCOAPODS: 1.11.2

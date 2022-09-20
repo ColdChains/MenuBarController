@@ -2,15 +2,17 @@
 //  MenuBarController.h
 //  MenuBarController
 //
-//  Created by lax on 2022/7/19.
+//  Created by lax on 2022/9/13.
 //
 
-#ifndef MenuBarController_h
-#define MenuBarController_h
+#import <Foundation/Foundation.h>
+
+//! Project version number for MenuBarController.
+FOUNDATION_EXPORT double MenuBarControllerVersionNumber;
+
+//! Project version string for MenuBarController.
+FOUNDATION_EXPORT const unsigned char MenuBarControllerVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <MenuBarController/PublicHeader.h>
 
 
-#endif /* MenuBarController_h */
-
-#import "LCMenuBarController.h"
-#import "LCMenuBar.h"
-#import "LCMenuBarView.h"

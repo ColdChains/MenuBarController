@@ -7,360 +7,442 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E8CCAE597756C61B2D7B60EEF4A29E4 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19300CF68F5718C6F9C3476F1A98C1DC /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */; };
-		1B433A1BF92BBD5811F61A000E4771C2 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2839E3707C14798138E8A0C72ACE4C25 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31F7C35C8863FA25A741A884E21BE7D0 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D0EFFE30E3193932A034220E3C4C0FA /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CC9B43AD90714A316815FAA71DC89A2 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */; };
-		53305278F1654F968B4E02DF71B098BE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */; };
-		54BEFE9F75005D327641073B838C6776 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */; };
-		567ABE0681AA82748435E32386DE12D7 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */; };
-		61225B0B9AEC591476E30C9A575013B3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		715AB2C777F6FCAB5EE0C667A909B698 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78251F42EB680FB72F040A1986279CD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		7B05A8DE072977F90AA84A0E98E23167 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */; };
-		7BF4D11517860C08F4B05A119D716E38 /* Pods-MenuBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 451D6C19A4D41C6DAC698C4EECF6D585 /* Pods-MenuBarController-dummy.m */; };
-		8171D105E2C5CD3C1357D544942B4446 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		83BC45EF65D7868C5AD41D9D0B481F1B /* Pods-MenuBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F306606338889B2E83AD0EB5F0762E /* Pods-MenuBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8AE868BC3E2E6FC92F4717835180C47D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		917F00179BAF66D00F1481F08C70A2EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		A1336977ADAAD492D6CFD089A8C6E358 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */; };
-		A83A6757F6C0003332D57B41FE24BEEA /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B10646B6AF73D470221EF25A5DEEEB6F /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4BE7728D87333785F811FED48CF134E /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B61AA5459C2B345AD6D84D8A5111C9CE /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE050DABC9BF806B3379AFD2367F4194 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEA99A49E5F8DA685E33DABA606041FF /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF2165D46CEBEE1D14418648A54ADFD1 /* Pods-MenuBarControllerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28FD43E8EC2BC6DF321A9FAF321D1F28 /* Pods-MenuBarControllerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C580D4BF3277BE98F1F44D7A2CA57D67 /* Pods-MenuBarControllerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D38B8469E3AE189EC4FC816BE5EE4D /* Pods-MenuBarControllerDemo-dummy.m */; };
-		C7D83D99D755676EF8A09CC77845BAF4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		C9375F078B54A9030D4B9C2E73222A5D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */; };
-		CECDB459AFB5AD0040AF86378F2DBF97 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */; };
-		CEE7BDCC3F3073CBBF7A76BC6CF3E519 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0310BF5EA6E44E9EE669BD3852A5EAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		E53FCD0CD1526B53074ED4EEF00131E9 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6FB269534400D40C1CE67D18EDD8A9A /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */; };
+		0796336CEFF601AE1247F220908D6122 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */; };
+		07C2A8D8E0CC8EAB5F37E03332631748 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */; };
+		11FCB3F9B8F3DCA55EADFB85AAF9D779 /* Pods-MenuBarControllerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 995AB2D8E5C22024851E4C2D83F8CFCA /* Pods-MenuBarControllerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1422F4D1C7597A7641CB3B433295AE1C /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */; };
+		16D24E170C5A4E3991F9C378259C9E43 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */; };
+		187AEAEFABA30C23783DE0BA67CDB53F /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */; };
+		19464E5871366D267456CAAF81B2E2D6 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */; };
+		24AED108806F65EA9BBEED416751D5FF /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */; };
+		31CB0E17706E0922E4E694012195751C /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */; };
+		35FB78B2F8BD0E0A1F1DAB88DD5F6525 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */; };
+		36E3317EDE9829C3622AE63D3B5D0D1D /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */; };
+		3AD3BE671BD40FE62762F7D9E49E6CE9 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */; };
+		3B2F8A0E771B0C01B350367B68C4C3F0 /* Pods-MenuBarController-MenuBarControllerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA5C9E2200E087D1C0495512115D334 /* Pods-MenuBarController-MenuBarControllerTests-dummy.m */; };
+		419630B467CBB25F377A105665DE49DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		441B24D9189D26152CC0DA97B741E833 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */; };
+		45940CC7CB8561893AE9F47E2EFDE986 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */; };
+		468C7838D0806615EB279CFE359B9E7C /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */; };
+		46914E49E8B39F271CD11F5FB30FD166 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */; };
+		525E445D6A1EF6B67EF4D0455FC5AAFA /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */; };
+		6FCEC1D82466A0640C067970C142D6FC /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */; };
+		717D0C947E8F27CAB5675FCF0D200DB9 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */; };
+		72744A9122CF44B2DEE0151B85CAB0CC /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */; };
+		75247B554D10F3BD0FF64339D867ECB9 /* Pods-MenuBarController-MenuBarControllerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6643E67E87C615DFA88AD4209478F2 /* Pods-MenuBarController-MenuBarControllerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A7E4189DEE2CD9B82CFBEA1C949BE15 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */; };
+		7CFE8C5EF5C3EAB15FF1C4B24052875F /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */; };
+		82EDC1DBC6963CC9D2F5CF2F9E0FB5DA /* Pods-MenuBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 354D3BF0A373C0A3E5DD8E50FA059892 /* Pods-MenuBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D114E03A98601E5CE8A11FF7C6F2DEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8F488574ECEADDC9413AE8903A76AFDA /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */; };
+		903A53AF4B26ED775277439C06D265D7 /* Pods-MenuBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFC561D9C58B4D84E621AF07DDBF443 /* Pods-MenuBarController-dummy.m */; };
+		94FE297EF5474933073D62936D9A7224 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */; };
+		9825456B68AAF3CD9F1137377D738A9D /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */; };
+		99BA19092DA09C3A52F275A0B367EC04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9AD08B51D408D58639348CC577DD988B /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */; };
+		9C0A3ED1F524AA4C4147169AD20D9078 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */; };
+		A8D62FB2DCD20114129953F7A01F74B4 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */; };
+		B197B2B88A4E00F5611E5C3B0BC0EC52 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */; };
+		B6600A7FA07908F5CBC4E5D90331AA53 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */; };
+		BBF7B32FB70AEDE982CDA068ED3578BA /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6AE6D1EFA9B74E76913A907ED6F3BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D2CAE158736804934CA8B0F75DB003CE /* Pods-MenuBarControllerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F62945B31BFB150A05FDDB4CABB30BA1 /* Pods-MenuBarControllerDemo-dummy.m */; };
+		D78F6A95A088F7E619745556DAFE9E0A /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */; };
+		DC4424F1C3EDE2DFD10159ED87048E99 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */; };
+		F64213220213FD9F6AEB344C7541869A /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */; };
+		F74B5978371D6E071955B81535B7BFEE /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */; };
+		F7ADF88139C23B1186F5784FA590E92C /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */; };
+		FED883FB451220BEC4417EA345BE612F /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1C971E555806802D7F2C52142CD04361 /* PBXContainerItemProxy */ = {
+		0E6DFA1AFBDC595056EB6307B766FC92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
 		};
-		727C6DAAF3512A66004CC72F718A21FB /* PBXContainerItemProxy */ = {
+		2338D3FF4A664C97BC88F50FBBA48FCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		62BF571A44D6CAB2CED47C2C2C3FB7D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		16F306606338889B2E83AD0EB5F0762E /* Pods-MenuBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MenuBarController-umbrella.h"; sourceTree = "<group>"; };
-		1E402AAA7548EDC45DA7127B831CCBDE /* Pods-MenuBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarController.release.xcconfig"; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24A4EB726CF51A4B5783211716F9CFA1 /* Pods-MenuBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarController-Info.plist"; sourceTree = "<group>"; };
-		27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		28A372AE6D124055B08DAF1088BA8A80 /* Pods-MenuBarControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		28FD43E8EC2BC6DF321A9FAF321D1F28 /* Pods-MenuBarControllerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MenuBarControllerDemo-umbrella.h"; sourceTree = "<group>"; };
-		30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		37D38B8469E3AE189EC4FC816BE5EE4D /* Pods-MenuBarControllerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MenuBarControllerDemo-dummy.m"; sourceTree = "<group>"; };
-		3E537C1F47DA8B06DA4A71E3D14F4DE4 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
-		419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
-		451D6C19A4D41C6DAC698C4EECF6D585 /* Pods-MenuBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MenuBarController-dummy.m"; sourceTree = "<group>"; };
-		470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		567AA4680EE2A39E11A1985062EA0EE6 /* Pods-MenuBarControllerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MenuBarControllerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5BDBF857EF2B74E80C0855F73365E440 /* Pods-MenuBarControllerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MenuBarControllerDemo-frameworks.sh"; sourceTree = "<group>"; };
-		607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
-		6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
-		72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		73F7C3ED6B6E8DEDFA43CDBF940B0709 /* Pods-MenuBarControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		86D4F3284FB668F6BEB19DDFCB1EBEB7 /* Pods-MenuBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MenuBarController.modulemap"; sourceTree = "<group>"; };
-		8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		0574575C7652031A9389FA04BE004A12 /* Pods-MenuBarControllerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarControllerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		0B97635F1471E784F692A871510577CB /* Pods-MenuBarController-MenuBarControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarController-MenuBarControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		129DE202FA1F8D3808265B111B42BF71 /* Pods-MenuBarController-MenuBarControllerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MenuBarController-MenuBarControllerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1475ED7D88BEC1A02A40571701DF1D1E /* Pods-MenuBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarController-Info.plist"; sourceTree = "<group>"; };
+		1922DD74A5B852DF79B37D14660FFD11 /* Pods-MenuBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarController.debug.xcconfig"; sourceTree = "<group>"; };
+		1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		2C36D0C573BBA9DA2A21F08F9982E8E2 /* Pods-MenuBarController-MenuBarControllerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarController-MenuBarControllerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2D4911F96E54B60B4CDEBC7C54DAD899 /* Pods-MenuBarController-MenuBarControllerTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MenuBarController-MenuBarControllerTests"; path = Pods_MenuBarController_MenuBarControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2496A9DC3935DA42BA7874891A5213 /* Pods-MenuBarController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarController.release.xcconfig"; sourceTree = "<group>"; };
+		34FE96AC309168E8E10364E3705C61CE /* Pods-MenuBarController-MenuBarControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarController-MenuBarControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		354D3BF0A373C0A3E5DD8E50FA059892 /* Pods-MenuBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MenuBarController-umbrella.h"; sourceTree = "<group>"; };
+		36BD1F3A544D23EDC9FD0A25E572C4A7 /* Pods-MenuBarControllerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MenuBarControllerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		3B569D02FFB2C8143A71D4511C970AC4 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		4EFC561D9C58B4D84E621AF07DDBF443 /* Pods-MenuBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MenuBarController-dummy.m"; sourceTree = "<group>"; };
+		51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		544BFE70A8AECF5A460FB6A21E03234B /* Pods-MenuBarControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		7EA5C9E2200E087D1C0495512115D334 /* Pods-MenuBarController-MenuBarControllerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MenuBarController-MenuBarControllerTests-dummy.m"; sourceTree = "<group>"; };
+		807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		848E9BA38AE7A77B37C78B343E836974 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		85A907FA2C081DFAF3C552DCDDB812A7 /* Pods-MenuBarController-MenuBarControllerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MenuBarController-MenuBarControllerTests.modulemap"; sourceTree = "<group>"; };
+		8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		96DC41D868673EFB5C6FB2EB043EC834 /* Pods-MenuBarControllerDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarControllerDemo-Info.plist"; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		995AB2D8E5C22024851E4C2D83F8CFCA /* Pods-MenuBarControllerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MenuBarControllerDemo-umbrella.h"; sourceTree = "<group>"; };
 		9A21812DA5AD49CB23D3DCFAA6184F0C /* Pods-MenuBarController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MenuBarController"; path = Pods_MenuBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		BDB676D9D5D3AFD89D8DDCE3369D4BAC /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		C32DBB7D50C060D3B25412FCDF7EFBBC /* Pods-MenuBarControllerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarControllerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DAFE7E5F30CA98842B556BC92419ADFD /* Pods-MenuBarControllerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MenuBarControllerDemo.modulemap"; sourceTree = "<group>"; };
-		DC03936C989ED792536EF22E2D5D669A /* Pods-MenuBarController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MenuBarController-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DFA1012B6A8BD076CD9F09831AE37A01 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
-		E55BBE3FDBAC089F4999108EE8F7BE95 /* Pods-MenuBarControllerDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarControllerDemo-Info.plist"; sourceTree = "<group>"; };
-		E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
-		FD53B10B8A0DD745637692098D0510B7 /* Pods-MenuBarController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarController-acknowledgements.plist"; sourceTree = "<group>"; };
+		A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		A651FC8213DEA870767197E6B7FEF76E /* Pods-MenuBarControllerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MenuBarControllerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		C2C83307B07114959F2AD44B92EB4DDE /* Pods-MenuBarController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MenuBarController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		CBE105B57C94C8A00F7F625E309D170F /* Pods-MenuBarControllerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MenuBarControllerDemo.modulemap"; sourceTree = "<group>"; };
+		D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		D66415DF65C25173CAD1F48A8F27B201 /* Pods-MenuBarControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		DA6643E67E87C615DFA88AD4209478F2 /* Pods-MenuBarController-MenuBarControllerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MenuBarController-MenuBarControllerTests-umbrella.h"; sourceTree = "<group>"; };
+		DB416C205DF5564CA832EE75D0019234 /* Pods-MenuBarController-MenuBarControllerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarController-MenuBarControllerTests-Info.plist"; sourceTree = "<group>"; };
+		DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		E2070246046EC94EF1396AC30E3FC5E8 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		E95C8369FD5B3A2EBF8150F0266AE0D1 /* Pods-MenuBarController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MenuBarController-acknowledgements.plist"; sourceTree = "<group>"; };
+		F3C7E38DD83F674DB10B35FC85C86B36 /* Pods-MenuBarController-MenuBarControllerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MenuBarController-MenuBarControllerTests-frameworks.sh"; sourceTree = "<group>"; };
+		F593BD673A1A09AEAA6081AA5D551379 /* Pods-MenuBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MenuBarController.modulemap"; sourceTree = "<group>"; };
+		F62945B31BFB150A05FDDB4CABB30BA1 /* Pods-MenuBarControllerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MenuBarControllerDemo-dummy.m"; sourceTree = "<group>"; };
+		FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		FDD8CA96E3E6948A17069121BB79F7AE /* Pods-MenuBarControllerDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MenuBarControllerDemo"; path = Pods_MenuBarControllerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF55F130708A584769CCC2C606266E66 /* Pods-MenuBarController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MenuBarController.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4F418573D54397897BEA76974FB92A6C /* Frameworks */ = {
+		2F60ABC2428533E67AB8BE45D89D38BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0310BF5EA6E44E9EE669BD3852A5EAF /* Foundation.framework in Frameworks */,
+				8D114E03A98601E5CE8A11FF7C6F2DEE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57335F2104F3E1EF1C26CEC7EF7B02E3 /* Frameworks */ = {
+		C860AEEE7F703FB1B484D98F8674A034 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				917F00179BAF66D00F1481F08C70A2EB /* Foundation.framework in Frameworks */,
+				99BA19092DA09C3A52F275A0B367EC04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCB6E60691DB58C9D2C0F26733F25C2E /* Frameworks */ = {
+		CB5A1F403FD945A16A488F2A378A8EF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78251F42EB680FB72F040A1986279CD2 /* Foundation.framework in Frameworks */,
-				8171D105E2C5CD3C1357D544942B4446 /* UIKit.framework in Frameworks */,
+				419630B467CBB25F377A105665DE49DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF273E865940DB0CA39CCBB19DA291B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6AE6D1EFA9B74E76913A907ED6F3BC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CCC0CD98AB951949302B433AFE762AD /* Masonry */ = {
+		292484BB638BCFB0CA0AC6907CE0C0AE /* Pods-MenuBarController */ = {
 			isa = PBXGroup;
 			children = (
-				4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */,
-				EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */,
-				02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */,
-				9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */,
-				837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */,
-				B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */,
-				470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */,
-				6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */,
-				6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */,
-				EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */,
-				607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */,
-				A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */,
-				A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */,
-				D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */,
-				72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */,
-				30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */,
-				8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */,
-				27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */,
-				E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */,
-				047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */,
-				AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */,
-				86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */,
-				55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */,
-				342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */,
-				C84A449C2DE4F91F0620A5147DD42E0F /* Support Files */,
+				F593BD673A1A09AEAA6081AA5D551379 /* Pods-MenuBarController.modulemap */,
+				C2C83307B07114959F2AD44B92EB4DDE /* Pods-MenuBarController-acknowledgements.markdown */,
+				E95C8369FD5B3A2EBF8150F0266AE0D1 /* Pods-MenuBarController-acknowledgements.plist */,
+				4EFC561D9C58B4D84E621AF07DDBF443 /* Pods-MenuBarController-dummy.m */,
+				1475ED7D88BEC1A02A40571701DF1D1E /* Pods-MenuBarController-Info.plist */,
+				354D3BF0A373C0A3E5DD8E50FA059892 /* Pods-MenuBarController-umbrella.h */,
+				1922DD74A5B852DF79B37D14660FFD11 /* Pods-MenuBarController.debug.xcconfig */,
+				2F2496A9DC3935DA42BA7874891A5213 /* Pods-MenuBarController.release.xcconfig */,
 			);
-			name = Masonry;
-			path = Masonry;
+			name = "Pods-MenuBarController";
+			path = "Target Support Files/Pods-MenuBarController";
 			sourceTree = "<group>";
 		};
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+		427B270BD76A5EF45313FBF29233B96D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1D4C12D12374B0DF626825B00644AF5E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D01FFBD33018D4BABA0754A16D2F0126 /* Pods-MenuBarController */,
-				DAC3BFF72B375E2CDF1C4079E4B908A5 /* Pods-MenuBarControllerDemo */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
-				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5F49287B497303431688FFBF0EDFC106 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1FFED36A657123030ABB700256D73F15 /* Masonry */,
-				9A21812DA5AD49CB23D3DCFAA6184F0C /* Pods-MenuBarController */,
-				FDD8CA96E3E6948A17069121BB79F7AE /* Pods-MenuBarControllerDemo */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7529FD53BCE26816CCD46658378AAF1B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0CCC0CD98AB951949302B433AFE762AD /* Masonry */,
+				CA51EB6A266DFF60E2669DC4F20AE5DD /* SnapKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C84A449C2DE4F91F0620A5147DD42E0F /* Support Files */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3E537C1F47DA8B06DA4A71E3D14F4DE4 /* Masonry.modulemap */,
-				A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */,
-				DFA1012B6A8BD076CD9F09831AE37A01 /* Masonry-Info.plist */,
-				BDB676D9D5D3AFD89D8DDCE3369D4BAC /* Masonry-prefix.pch */,
-				6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */,
-				F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */,
-				419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Masonry";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		689B9662B3AD230B9E5EA0BCAC7A8DF6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				292484BB638BCFB0CA0AC6907CE0C0AE /* Pods-MenuBarController */,
+				CE74E8569FF32B9584455EA62CBE2FA1 /* Pods-MenuBarController-MenuBarControllerTests */,
+				6ADA85940B1BCD855833FB481824442F /* Pods-MenuBarControllerDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6ADA85940B1BCD855833FB481824442F /* Pods-MenuBarControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CBE105B57C94C8A00F7F625E309D170F /* Pods-MenuBarControllerDemo.modulemap */,
+				A651FC8213DEA870767197E6B7FEF76E /* Pods-MenuBarControllerDemo-acknowledgements.markdown */,
+				0574575C7652031A9389FA04BE004A12 /* Pods-MenuBarControllerDemo-acknowledgements.plist */,
+				F62945B31BFB150A05FDDB4CABB30BA1 /* Pods-MenuBarControllerDemo-dummy.m */,
+				36BD1F3A544D23EDC9FD0A25E572C4A7 /* Pods-MenuBarControllerDemo-frameworks.sh */,
+				96DC41D868673EFB5C6FB2EB043EC834 /* Pods-MenuBarControllerDemo-Info.plist */,
+				995AB2D8E5C22024851E4C2D83F8CFCA /* Pods-MenuBarControllerDemo-umbrella.h */,
+				544BFE70A8AECF5A460FB6A21E03234B /* Pods-MenuBarControllerDemo.debug.xcconfig */,
+				D66415DF65C25173CAD1F48A8F27B201 /* Pods-MenuBarControllerDemo.release.xcconfig */,
+			);
+			name = "Pods-MenuBarControllerDemo";
+			path = "Target Support Files/Pods-MenuBarControllerDemo";
+			sourceTree = "<group>";
+		};
+		6B1FAE9CBC468C9DB8D2D303C1B00E4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A21812DA5AD49CB23D3DCFAA6184F0C /* Pods-MenuBarController */,
+				2D4911F96E54B60B4CDEBC7C54DAD899 /* Pods-MenuBarController-MenuBarControllerTests */,
+				FDD8CA96E3E6948A17069121BB79F7AE /* Pods-MenuBarControllerDemo */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA51EB6A266DFF60E2669DC4F20AE5DD /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */,
+				8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */,
+				A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */,
+				E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */,
+				6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */,
+				BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */,
+				1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */,
+				DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */,
+				DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */,
+				460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */,
+				4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */,
+				7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */,
+				C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */,
+				C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */,
+				46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */,
+				766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */,
+				7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */,
+				FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */,
+				D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */,
+				E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */,
+				51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */,
+				91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */,
+				37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */,
+				6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */,
+				807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */,
+				8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */,
+				7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */,
+				5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */,
+				09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */,
+				00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */,
+				103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */,
+				00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */,
+				D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */,
+				4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */,
+				D28E246011041898C1EA6C3AAF01971C /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		CE74E8569FF32B9584455EA62CBE2FA1 /* Pods-MenuBarController-MenuBarControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				85A907FA2C081DFAF3C552DCDDB812A7 /* Pods-MenuBarController-MenuBarControllerTests.modulemap */,
+				129DE202FA1F8D3808265B111B42BF71 /* Pods-MenuBarController-MenuBarControllerTests-acknowledgements.markdown */,
+				2C36D0C573BBA9DA2A21F08F9982E8E2 /* Pods-MenuBarController-MenuBarControllerTests-acknowledgements.plist */,
+				7EA5C9E2200E087D1C0495512115D334 /* Pods-MenuBarController-MenuBarControllerTests-dummy.m */,
+				F3C7E38DD83F674DB10B35FC85C86B36 /* Pods-MenuBarController-MenuBarControllerTests-frameworks.sh */,
+				DB416C205DF5564CA832EE75D0019234 /* Pods-MenuBarController-MenuBarControllerTests-Info.plist */,
+				DA6643E67E87C615DFA88AD4209478F2 /* Pods-MenuBarController-MenuBarControllerTests-umbrella.h */,
+				0B97635F1471E784F692A871510577CB /* Pods-MenuBarController-MenuBarControllerTests.debug.xcconfig */,
+				34FE96AC309168E8E10364E3705C61CE /* Pods-MenuBarController-MenuBarControllerTests.release.xcconfig */,
+			);
+			name = "Pods-MenuBarController-MenuBarControllerTests";
+			path = "Target Support Files/Pods-MenuBarController-MenuBarControllerTests";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				7529FD53BCE26816CCD46658378AAF1B /* Pods */,
-				5F49287B497303431688FFBF0EDFC106 /* Products */,
-				1D4C12D12374B0DF626825B00644AF5E /* Targets Support Files */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				427B270BD76A5EF45313FBF29233B96D /* Pods */,
+				6B1FAE9CBC468C9DB8D2D303C1B00E4E /* Products */,
+				689B9662B3AD230B9E5EA0BCAC7A8DF6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D01FFBD33018D4BABA0754A16D2F0126 /* Pods-MenuBarController */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				86D4F3284FB668F6BEB19DDFCB1EBEB7 /* Pods-MenuBarController.modulemap */,
-				DC03936C989ED792536EF22E2D5D669A /* Pods-MenuBarController-acknowledgements.markdown */,
-				FD53B10B8A0DD745637692098D0510B7 /* Pods-MenuBarController-acknowledgements.plist */,
-				451D6C19A4D41C6DAC698C4EECF6D585 /* Pods-MenuBarController-dummy.m */,
-				24A4EB726CF51A4B5783211716F9CFA1 /* Pods-MenuBarController-Info.plist */,
-				16F306606338889B2E83AD0EB5F0762E /* Pods-MenuBarController-umbrella.h */,
-				FF55F130708A584769CCC2C606266E66 /* Pods-MenuBarController.debug.xcconfig */,
-				1E402AAA7548EDC45DA7127B831CCBDE /* Pods-MenuBarController.release.xcconfig */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
-			name = "Pods-MenuBarController";
-			path = "Target Support Files/Pods-MenuBarController";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DAC3BFF72B375E2CDF1C4079E4B908A5 /* Pods-MenuBarControllerDemo */ = {
+		D28E246011041898C1EA6C3AAF01971C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DAFE7E5F30CA98842B556BC92419ADFD /* Pods-MenuBarControllerDemo.modulemap */,
-				567AA4680EE2A39E11A1985062EA0EE6 /* Pods-MenuBarControllerDemo-acknowledgements.markdown */,
-				C32DBB7D50C060D3B25412FCDF7EFBBC /* Pods-MenuBarControllerDemo-acknowledgements.plist */,
-				37D38B8469E3AE189EC4FC816BE5EE4D /* Pods-MenuBarControllerDemo-dummy.m */,
-				5BDBF857EF2B74E80C0855F73365E440 /* Pods-MenuBarControllerDemo-frameworks.sh */,
-				E55BBE3FDBAC089F4999108EE8F7BE95 /* Pods-MenuBarControllerDemo-Info.plist */,
-				28FD43E8EC2BC6DF321A9FAF321D1F28 /* Pods-MenuBarControllerDemo-umbrella.h */,
-				73F7C3ED6B6E8DEDFA43CDBF940B0709 /* Pods-MenuBarControllerDemo.debug.xcconfig */,
-				28A372AE6D124055B08DAF1088BA8A80 /* Pods-MenuBarControllerDemo.release.xcconfig */,
+				E2070246046EC94EF1396AC30E3FC5E8 /* SnapKit.modulemap */,
+				AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */,
+				848E9BA38AE7A77B37C78B343E836974 /* SnapKit-Info.plist */,
+				3B569D02FFB2C8143A71D4511C970AC4 /* SnapKit-prefix.pch */,
+				42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */,
+				29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */,
+				B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */,
 			);
-			name = "Pods-MenuBarControllerDemo";
-			path = "Target Support Files/Pods-MenuBarControllerDemo";
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0FE7E2F02686006BC02E417C821D9FFE /* Headers */ = {
+		156C90ED37B8284344C54E74AABD2FEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83BC45EF65D7868C5AD41D9D0B481F1B /* Pods-MenuBarController-umbrella.h in Headers */,
+				11FCB3F9B8F3DCA55EADFB85AAF9D779 /* Pods-MenuBarControllerDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99A8659D86DFD4C224D177332D003EDC /* Headers */ = {
+		1CC53A81E03B85F87AEC4E40786B15E5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4BE7728D87333785F811FED48CF134E /* MASCompositeConstraint.h in Headers */,
-				BEA99A49E5F8DA685E33DABA606041FF /* MASConstraint.h in Headers */,
-				A83A6757F6C0003332D57B41FE24BEEA /* MASConstraint+Private.h in Headers */,
-				1B433A1BF92BBD5811F61A000E4771C2 /* MASConstraintMaker.h in Headers */,
-				2839E3707C14798138E8A0C72ACE4C25 /* MASLayoutConstraint.h in Headers */,
-				31F7C35C8863FA25A741A884E21BE7D0 /* Masonry.h in Headers */,
-				B61AA5459C2B345AD6D84D8A5111C9CE /* Masonry-umbrella.h in Headers */,
-				0E8CCAE597756C61B2D7B60EEF4A29E4 /* MASUtilities.h in Headers */,
-				715AB2C777F6FCAB5EE0C667A909B698 /* MASViewAttribute.h in Headers */,
-				CEE7BDCC3F3073CBBF7A76BC6CF3E519 /* MASViewConstraint.h in Headers */,
-				8AE868BC3E2E6FC92F4717835180C47D /* NSArray+MASAdditions.h in Headers */,
-				E53FCD0CD1526B53074ED4EEF00131E9 /* NSArray+MASShorthandAdditions.h in Headers */,
-				BE050DABC9BF806B3379AFD2367F4194 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
-				3D0EFFE30E3193932A034220E3C4C0FA /* View+MASAdditions.h in Headers */,
-				61225B0B9AEC591476E30C9A575013B3 /* View+MASShorthandAdditions.h in Headers */,
-				B10646B6AF73D470221EF25A5DEEEB6F /* ViewController+MASAdditions.h in Headers */,
+				75247B554D10F3BD0FF64339D867ECB9 /* Pods-MenuBarController-MenuBarControllerTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF678F0D7B6197AF92388C5D34C024CC /* Headers */ = {
+		6D069BB57561178046B8D28B51C73CA0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF2165D46CEBEE1D14418648A54ADFD1 /* Pods-MenuBarControllerDemo-umbrella.h in Headers */,
+				BBF7B32FB70AEDE982CDA068ED3578BA /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7FBE530209D548FA49F559E781E9DE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EDC1DBC6963CC9D2F5CF2F9E0FB5DA /* Pods-MenuBarController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 104EC9250BF4EDE104280490293C13C3 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildConfigurationList = E8978D78C4072A8F0B2F4C01F25013D4 /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				99A8659D86DFD4C224D177332D003EDC /* Headers */,
-				3003736003A11F9793D9EA6DC169AED7 /* Sources */,
-				CCB6E60691DB58C9D2C0F26733F25C2E /* Frameworks */,
-				4522D50300D635138BEDBF5E60D39B53 /* Resources */,
+				6D069BB57561178046B8D28B51C73CA0 /* Headers */,
+				99EC9EF8EF24A920FBFCB9CA0E21EEF2 /* Sources */,
+				C860AEEE7F703FB1B484D98F8674A034 /* Frameworks */,
+				02BE36EEA3D0C8A5BF07897A17360D12 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Masonry;
-			productName = Masonry;
-			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry */;
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A00DA42FA401BA81B8F8FB692DA3736 /* Pods-MenuBarController-MenuBarControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9B5D49CAACB301A0949E56538171200 /* Build configuration list for PBXNativeTarget "Pods-MenuBarController-MenuBarControllerTests" */;
+			buildPhases = (
+				1CC53A81E03B85F87AEC4E40786B15E5 /* Headers */,
+				23AA8F0EC584378ED07F615A09E39979 /* Sources */,
+				CB5A1F403FD945A16A488F2A378A8EF3 /* Frameworks */,
+				0859BB78F4966077D52A7B5EF819E99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E85F51052D19AF1D5332E1EF81EF4C4 /* PBXTargetDependency */,
+			);
+			name = "Pods-MenuBarController-MenuBarControllerTests";
+			productName = Pods_MenuBarController_MenuBarControllerTests;
+			productReference = 2D4911F96E54B60B4CDEBC7C54DAD899 /* Pods-MenuBarController-MenuBarControllerTests */;
 			productType = "com.apple.product-type.framework";
 		};
 		9E776599696526B75E6C5EF218A455D2 /* Pods-MenuBarControllerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF971EE6BF1BB5C1126DBCBDEFDDED76 /* Build configuration list for PBXNativeTarget "Pods-MenuBarControllerDemo" */;
+			buildConfigurationList = 23BA5E00FB0B560D33DF83159CFEE57E /* Build configuration list for PBXNativeTarget "Pods-MenuBarControllerDemo" */;
 			buildPhases = (
-				EF678F0D7B6197AF92388C5D34C024CC /* Headers */,
-				89675C399EC4A8343E1D7B906CE3D07A /* Sources */,
-				57335F2104F3E1EF1C26CEC7EF7B02E3 /* Frameworks */,
-				837280DB3694D9D60CB7953654FB46D6 /* Resources */,
+				156C90ED37B8284344C54E74AABD2FEF /* Headers */,
+				4AF09958C8E323321927DF6742683AF2 /* Sources */,
+				2F60ABC2428533E67AB8BE45D89D38BD /* Frameworks */,
+				A6EDD2E4EA7CCD0244AA2866DD69FCB6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F3628BEF347513313108DABBFE082CA0 /* PBXTargetDependency */,
+				5A5099748010CFB41BE6F35613209CD2 /* PBXTargetDependency */,
 			);
 			name = "Pods-MenuBarControllerDemo";
 			productName = Pods_MenuBarControllerDemo;
@@ -369,17 +451,17 @@
 		};
 		B5F8B532C403EB433DD1E1AA7D1E8FEB /* Pods-MenuBarController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0F30187F744D959D70D2573DA6A51FF /* Build configuration list for PBXNativeTarget "Pods-MenuBarController" */;
+			buildConfigurationList = CDF36AAD380F56DC05D6B44BDB70B2C4 /* Build configuration list for PBXNativeTarget "Pods-MenuBarController" */;
 			buildPhases = (
-				0FE7E2F02686006BC02E417C821D9FFE /* Headers */,
-				B2F1B6207BB576AF937A1ABB41CE5036 /* Sources */,
-				4F418573D54397897BEA76974FB92A6C /* Frameworks */,
-				FB25D27E1F52A9AFF0A6C4C8EF4700DE /* Resources */,
+				D7FBE530209D548FA49F559E781E9DE0 /* Headers */,
+				46941241E02270EB711D200C30BEAE04 /* Sources */,
+				FDF273E865940DB0CA39CCBB19DA291B /* Frameworks */,
+				AA7127D5CE6D5B756EFF2973AD02FA6D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CEC4B223E1A0C5B9358F692A615C20F2 /* PBXTargetDependency */,
+				56ADA144A4A82F9320D4E36C5AFAAB33 /* PBXTargetDependency */,
 			);
 			name = "Pods-MenuBarController";
 			productName = Pods_MenuBarController;
@@ -404,33 +486,41 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5F49287B497303431688FFBF0EDFC106 /* Products */;
+			productRefGroup = 6B1FAE9CBC468C9DB8D2D303C1B00E4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
 				B5F8B532C403EB433DD1E1AA7D1E8FEB /* Pods-MenuBarController */,
+				5A00DA42FA401BA81B8F8FB692DA3736 /* Pods-MenuBarController-MenuBarControllerTests */,
 				9E776599696526B75E6C5EF218A455D2 /* Pods-MenuBarControllerDemo */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4522D50300D635138BEDBF5E60D39B53 /* Resources */ = {
+		02BE36EEA3D0C8A5BF07897A17360D12 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		837280DB3694D9D60CB7953654FB46D6 /* Resources */ = {
+		0859BB78F4966077D52A7B5EF819E99D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB25D27E1F52A9AFF0A6C4C8EF4700DE /* Resources */ = {
+		A6EDD2E4EA7CCD0244AA2866DD69FCB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7127D5CE6D5B756EFF2973AD02FA6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,63 +530,213 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3003736003A11F9793D9EA6DC169AED7 /* Sources */ = {
+		23AA8F0EC584378ED07F615A09E39979 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19300CF68F5718C6F9C3476F1A98C1DC /* MASCompositeConstraint.m in Sources */,
-				7B05A8DE072977F90AA84A0E98E23167 /* MASConstraint.m in Sources */,
-				4CC9B43AD90714A316815FAA71DC89A2 /* MASConstraintMaker.m in Sources */,
-				54BEFE9F75005D327641073B838C6776 /* MASLayoutConstraint.m in Sources */,
-				CECDB459AFB5AD0040AF86378F2DBF97 /* Masonry-dummy.m in Sources */,
-				53305278F1654F968B4E02DF71B098BE /* MASViewAttribute.m in Sources */,
-				E6FB269534400D40C1CE67D18EDD8A9A /* MASViewConstraint.m in Sources */,
-				C9375F078B54A9030D4B9C2E73222A5D /* NSArray+MASAdditions.m in Sources */,
-				C7D83D99D755676EF8A09CC77845BAF4 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				A1336977ADAAD492D6CFD089A8C6E358 /* View+MASAdditions.m in Sources */,
-				567ABE0681AA82748435E32386DE12D7 /* ViewController+MASAdditions.m in Sources */,
+				3B2F8A0E771B0C01B350367B68C4C3F0 /* Pods-MenuBarController-MenuBarControllerTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89675C399EC4A8343E1D7B906CE3D07A /* Sources */ = {
+		46941241E02270EB711D200C30BEAE04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C580D4BF3277BE98F1F44D7A2CA57D67 /* Pods-MenuBarControllerDemo-dummy.m in Sources */,
+				903A53AF4B26ED775277439C06D265D7 /* Pods-MenuBarController-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2F1B6207BB576AF937A1ABB41CE5036 /* Sources */ = {
+		4AF09958C8E323321927DF6742683AF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BF4D11517860C08F4B05A119D716E38 /* Pods-MenuBarController-dummy.m in Sources */,
+				D2CAE158736804934CA8B0F75DB003CE /* Pods-MenuBarControllerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EC9EF8EF24A920FBFCB9CA0E21EEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9825456B68AAF3CD9F1137377D738A9D /* Constraint.swift in Sources */,
+				F7ADF88139C23B1186F5784FA590E92C /* ConstraintAttributes.swift in Sources */,
+				1422F4D1C7597A7641CB3B433295AE1C /* ConstraintConfig.swift in Sources */,
+				35FB78B2F8BD0E0A1F1DAB88DD5F6525 /* ConstraintConstantTarget.swift in Sources */,
+				3AD3BE671BD40FE62762F7D9E49E6CE9 /* ConstraintDescription.swift in Sources */,
+				DC4424F1C3EDE2DFD10159ED87048E99 /* ConstraintDSL.swift in Sources */,
+				45940CC7CB8561893AE9F47E2EFDE986 /* ConstraintInsets.swift in Sources */,
+				717D0C947E8F27CAB5675FCF0D200DB9 /* ConstraintInsetTarget.swift in Sources */,
+				B197B2B88A4E00F5611E5C3B0BC0EC52 /* ConstraintItem.swift in Sources */,
+				36E3317EDE9829C3622AE63D3B5D0D1D /* ConstraintLayoutGuide.swift in Sources */,
+				8F488574ECEADDC9413AE8903A76AFDA /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				46914E49E8B39F271CD11F5FB30FD166 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				441B24D9189D26152CC0DA97B741E833 /* ConstraintLayoutSupport.swift in Sources */,
+				A8D62FB2DCD20114129953F7A01F74B4 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				468C7838D0806615EB279CFE359B9E7C /* ConstraintMaker.swift in Sources */,
+				19464E5871366D267456CAAF81B2E2D6 /* ConstraintMakerEditable.swift in Sources */,
+				07C2A8D8E0CC8EAB5F37E03332631748 /* ConstraintMakerExtendable.swift in Sources */,
+				6FCEC1D82466A0640C067970C142D6FC /* ConstraintMakerFinalizable.swift in Sources */,
+				F64213220213FD9F6AEB344C7541869A /* ConstraintMakerPriortizable.swift in Sources */,
+				D78F6A95A088F7E619745556DAFE9E0A /* ConstraintMakerRelatable.swift in Sources */,
+				31CB0E17706E0922E4E694012195751C /* ConstraintMultiplierTarget.swift in Sources */,
+				7CFE8C5EF5C3EAB15FF1C4B24052875F /* ConstraintOffsetTarget.swift in Sources */,
+				94FE297EF5474933073D62936D9A7224 /* ConstraintPriority.swift in Sources */,
+				F74B5978371D6E071955B81535B7BFEE /* ConstraintPriorityTarget.swift in Sources */,
+				24AED108806F65EA9BBEED416751D5FF /* ConstraintRelatableTarget.swift in Sources */,
+				B6600A7FA07908F5CBC4E5D90331AA53 /* ConstraintRelation.swift in Sources */,
+				FED883FB451220BEC4417EA345BE612F /* ConstraintView.swift in Sources */,
+				9AD08B51D408D58639348CC577DD988B /* ConstraintView+Extensions.swift in Sources */,
+				7A7E4189DEE2CD9B82CFBEA1C949BE15 /* ConstraintViewDSL.swift in Sources */,
+				525E445D6A1EF6B67EF4D0455FC5AAFA /* Debugging.swift in Sources */,
+				72744A9122CF44B2DEE0151B85CAB0CC /* LayoutConstraint.swift in Sources */,
+				0796336CEFF601AE1247F220908D6122 /* LayoutConstraintItem.swift in Sources */,
+				187AEAEFABA30C23783DE0BA67CDB53F /* SnapKit-dummy.m in Sources */,
+				9C0A3ED1F524AA4C4147169AD20D9078 /* Typealiases.swift in Sources */,
+				16D24E170C5A4E3991F9C378259C9E43 /* UILayoutSupport+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CEC4B223E1A0C5B9358F692A615C20F2 /* PBXTargetDependency */ = {
+		56ADA144A4A82F9320D4E36C5AFAAB33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 1C971E555806802D7F2C52142CD04361 /* PBXContainerItemProxy */;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 2338D3FF4A664C97BC88F50FBBA48FCC /* PBXContainerItemProxy */;
 		};
-		F3628BEF347513313108DABBFE082CA0 /* PBXTargetDependency */ = {
+		5A5099748010CFB41BE6F35613209CD2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 727C6DAAF3512A66004CC72F718A21FB /* PBXContainerItemProxy */;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 0E6DFA1AFBDC595056EB6307B766FC92 /* PBXContainerItemProxy */;
+		};
+		7E85F51052D19AF1D5332E1EF81EF4C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 62BF571A44D6CAB2CED47C2C2C3FB7D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1F04308243FCC4E17C5FF9EB156F6D3E /* Release */ = {
+		27164CAE4806D6ECAD6DCC37377E7009 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E402AAA7548EDC45DA7127B831CCBDE /* Pods-MenuBarController.release.xcconfig */;
+			baseConfigurationReference = D66415DF65C25173CAD1F48A8F27B201 /* Pods-MenuBarControllerDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MenuBarControllerDemo/Pods-MenuBarControllerDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MenuBarControllerDemo/Pods-MenuBarControllerDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27B38535CD3957EB405AA769A4743088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5107C0B3376F215F69014BC535D9AABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34FE96AC309168E8E10364E3705C61CE /* Pods-MenuBarController-MenuBarControllerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MenuBarController-MenuBarControllerTests/Pods-MenuBarController-MenuBarControllerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MenuBarController-MenuBarControllerTests/Pods-MenuBarController-MenuBarControllerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51B71118CA9B4146395B718192E5254E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1922DD74A5B852DF79B37D14660FFD11 /* Pods-MenuBarController.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -507,7 +747,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MenuBarController/Pods-MenuBarController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,13 +763,74 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
 			name = Release;
 		};
-		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -582,7 +883,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -595,11 +896,83 @@
 			};
 			name = Debug;
 		};
-		2D991CCD08455ECA33BC7E5DAA9675F0 /* Debug */ = {
+		DE9FBF0AE58D04EF13EE5FEC11FE0A57 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF55F130708A584769CCC2C606266E66 /* Pods-MenuBarController.debug.xcconfig */;
+			baseConfigurationReference = 0B97635F1471E784F692A871510577CB /* Pods-MenuBarController-MenuBarControllerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MenuBarController-MenuBarControllerTests/Pods-MenuBarController-MenuBarControllerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MenuBarController-MenuBarControllerTests/Pods-MenuBarController-MenuBarControllerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFA126C1F44C3FDA2FCB9DE914D780A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED5AEE519F67690F13F6DEA8785CF877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F2496A9DC3935DA42BA7874891A5213 /* Pods-MenuBarController.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -610,7 +983,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MenuBarController/Pods-MenuBarController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,83 +999,18 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		574336E93FEE5E80463961C3B5210418 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		83A1CD5A0D744E6C5C16EB552F459A6A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		9041A84D6DCFF50120342488496C0C95 /* Release */ = {
+		F558F59C9AFE4863FBFF4D971CD9F064 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28A372AE6D124055B08DAF1088BA8A80 /* Pods-MenuBarControllerDemo.release.xcconfig */;
+			baseConfigurationReference = 544BFE70A8AECF5A460FB6A21E03234B /* Pods-MenuBarControllerDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -713,44 +1021,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MenuBarControllerDemo/Pods-MenuBarControllerDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MenuBarControllerDemo/Pods-MenuBarControllerDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9E6B126C2E0999FE525FCA44717BD2D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73F7C3ED6B6E8DEDFA43CDBF940B0709 /* Pods-MenuBarControllerDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MenuBarControllerDemo/Pods-MenuBarControllerDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -770,77 +1041,15 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		104EC9250BF4EDE104280490293C13C3 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+		23BA5E00FB0B560D33DF83159CFEE57E /* Build configuration list for PBXNativeTarget "Pods-MenuBarControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				574336E93FEE5E80463961C3B5210418 /* Debug */,
-				83A1CD5A0D744E6C5C16EB552F459A6A /* Release */,
+				F558F59C9AFE4863FBFF4D971CD9F064 /* Debug */,
+				27164CAE4806D6ECAD6DCC37377E7009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -848,26 +1057,35 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
-				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0F30187F744D959D70D2573DA6A51FF /* Build configuration list for PBXNativeTarget "Pods-MenuBarController" */ = {
+		CDF36AAD380F56DC05D6B44BDB70B2C4 /* Build configuration list for PBXNativeTarget "Pods-MenuBarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D991CCD08455ECA33BC7E5DAA9675F0 /* Debug */,
-				1F04308243FCC4E17C5FF9EB156F6D3E /* Release */,
+				51B71118CA9B4146395B718192E5254E /* Debug */,
+				ED5AEE519F67690F13F6DEA8785CF877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF971EE6BF1BB5C1126DBCBDEFDDED76 /* Build configuration list for PBXNativeTarget "Pods-MenuBarControllerDemo" */ = {
+		E8978D78C4072A8F0B2F4C01F25013D4 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E6B126C2E0999FE525FCA44717BD2D6 /* Debug */,
-				9041A84D6DCFF50120342488496C0C95 /* Release */,
+				DFA126C1F44C3FDA2FCB9DE914D780A2 /* Debug */,
+				27B38535CD3957EB405AA769A4743088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B5D49CAACB301A0949E56538171200 /* Build configuration list for PBXNativeTarget "Pods-MenuBarController-MenuBarControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE9FBF0AE58D04EF13EE5FEC11FE0A57 /* Debug */,
+				5107C0B3376F215F69014BC535D9AABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

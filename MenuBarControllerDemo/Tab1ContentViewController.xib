@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Tab1ContentViewController" customModule="MenuBarControllerDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KbR-hw-AaI">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubScrollView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yY-o1-alg">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="896" id="2j6-Wf-tlF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="5yY-o1-alg" firstAttribute="width" secondItem="KbR-hw-AaI" secondAttribute="width" id="35r-Qa-wi9"/>
+                        <constraint firstAttribute="trailing" secondItem="5yY-o1-alg" secondAttribute="trailing" id="Ja7-F9-wuU"/>
+                        <constraint firstItem="5yY-o1-alg" firstAttribute="top" secondItem="KbR-hw-AaI" secondAttribute="top" id="dPK-cs-VhI"/>
+                        <constraint firstAttribute="bottom" secondItem="5yY-o1-alg" secondAttribute="bottom" id="wxJ-pk-cHo"/>
+                        <constraint firstItem="5yY-o1-alg" firstAttribute="leading" secondItem="KbR-hw-AaI" secondAttribute="leading" id="ycB-6N-Exi"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KbR-hw-AaI" secondAttribute="bottom" id="3Nj-nE-l1h"/>
+                <constraint firstItem="KbR-hw-AaI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A20-vi-hWb"/>
+                <constraint firstItem="KbR-hw-AaI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GiG-tP-9Gc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KbR-hw-AaI" secondAttribute="trailing" id="gdA-oH-oKo"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="139.95535714285714"/>
+        </view>
+    </objects>
+</document>
