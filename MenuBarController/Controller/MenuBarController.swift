@@ -789,7 +789,7 @@ open class MenuBarController: UIViewController {
     }
     
     /// 竖向滚动视图回到顶部
-    public func scrollToTop(with animated: Bool) {
+    open func scrollToTop(with animated: Bool) {
         if verticalScrollView?.contentOffset.y == 0 { return; }
         touchStatusBar = true
         outsideCanScroll = true
@@ -798,7 +798,7 @@ open class MenuBarController: UIViewController {
     }
     
     /// 子视图回到顶部
-    public func subScrollViewScrollToTop(with animated:Bool) {
+    open func subScrollViewScrollToTop(with animated:Bool) {
         if let currentView = currentViewController as? MenuBarController {
             outsideCanScroll = true
             verticalScrollView?.isTouching = true
@@ -814,7 +814,7 @@ open class MenuBarController: UIViewController {
     }
     
     /// 滑动到指定位置
-    public func scroll(to index: Int, animated: Bool) {
+    open func scroll(to index: Int, animated: Bool) {
         loadChildViewController(at: index)
         horizontalScrollView.setContentOffset(CGPoint(x: CGFloat(index) * horizontalScrollView.bounds.size.width, y: 0), animated: animated)
         appearanceTransition(with: index, oldIndex: currentIndex)
@@ -829,12 +829,12 @@ open class MenuBarController: UIViewController {
     }
 
     /// 菜单是否需要选中 默认返回true 返回false则滑动子视图时菜单不会有选中态
-    public func menuBarShouldChange(at index: Int) -> Bool {
+    open func menuBarShouldChange(at index: Int) -> Bool {
         return true
     }
 
     /// 菜单已经选中
-    public func menuBarDidChanged(at index: Int) {
+    open func menuBarDidChanged(at index: Int) {
         if let menuBar = menuBarFrom(menuBar) {
             menuBar.menuBarDidSelect(menuBar, at: index)
         }
@@ -850,7 +850,7 @@ open class MenuBarController: UIViewController {
 
 extension MenuBarController: UIScrollViewDelegate {
     
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == verticalScrollView {
             delegate?.menuBarScrollViewDidScroll(scrollView, type: .vertical)
         } else if scrollView == horizontalScrollView {
@@ -868,7 +868,7 @@ extension MenuBarController: UIScrollViewDelegate {
         }
     }
     
-    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    open func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if scrollView == verticalScrollView {
             alwaysBounceHorizontal = scrollView.alwaysBounceHorizontal
             if scrollView.alwaysBounceHorizontal {
@@ -880,7 +880,7 @@ extension MenuBarController: UIScrollViewDelegate {
         }
     }
     
-    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if scrollView == verticalScrollView {
             if alwaysBounceHorizontal {
                 verticalScrollView?.alwaysBounceHorizontal = true
@@ -898,7 +898,7 @@ extension MenuBarController: UIScrollViewDelegate {
         }
     }
     
-    public func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+    open func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
         if scrollView == verticalScrollView {
             delegate?.menuBarScrollViewWillBeginDecelerating(scrollView, type: .vertical)
         } else if scrollView == horizontalScrollView {
@@ -906,7 +906,7 @@ extension MenuBarController: UIScrollViewDelegate {
         }
     }
     
-    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    open func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if scrollView == verticalScrollView {
             verticalScrollView?.isTouching = false
             delegate?.menuBarScrollViewDidEndDecelerating(scrollView, type: .vertical)
@@ -916,18 +916,18 @@ extension MenuBarController: UIScrollViewDelegate {
         }
     }
     
-    public func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
+    open func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
         if touchStatusBar { return false }
         touchStatusBar = true
         subScrollViewScrollToTop(with: true)
         return true
     }
     
-    public func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
+    open func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
         touchStatusBar = false
     }
     
-    public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    open func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         touchStatusBar = false
     }
     
@@ -935,7 +935,7 @@ extension MenuBarController: UIScrollViewDelegate {
 
 extension MenuBarController: MenuBarDelegate {
 
-    public func menuBarDidSelect(_ menuBar: (UIView & MenuBarDelegate), at index: Int) {
+    open func menuBarDidSelect(_ menuBar: (UIView & MenuBarDelegate), at index: Int) {
         scroll(to: index, animated: scrollAnimated)
     }
 
@@ -943,7 +943,7 @@ extension MenuBarController: MenuBarDelegate {
 
 extension MenuBarController: MenuBarScrollViewGestureDelegate {
 
-    func menuBarScrollView(_ menuBarScrollView: MenuBarScrollView, gestureShouldRecognizeSimultaneouslyWith responder: UIResponder) -> Bool {
+    open func menuBarScrollView(_ menuBarScrollView: MenuBarScrollView, gestureShouldRecognizeSimultaneouslyWith responder: UIResponder) -> Bool {
         for viewController in viewControllers {
             if let menuBarController = viewController as? MenuBarController {
                 for subViewController in menuBarController.viewControllers {
@@ -964,7 +964,7 @@ extension MenuBarController: MenuBarScrollViewGestureDelegate {
 
 extension MenuBarController: MenuBarObserverDelegate {
     
-    func menuBarController(_ menuBarController: MenuBarController, didAddObserver scrollView: UIScrollView) {
+    open func menuBarController(_ menuBarController: MenuBarController, didAddObserver scrollView: UIScrollView) {
         if observerDictionary[String(format: "%p", scrollView)] == nil {
             observerDictionary[String(format: "%p", scrollView)] = 1
             scrollView.addObserver(self, forKeyPath: "contentOffset", options: [.new, .old], context: nil)

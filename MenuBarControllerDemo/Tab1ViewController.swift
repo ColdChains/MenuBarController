@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MenuBarController
 
 class Tab1ViewController: MenuBarController {
 

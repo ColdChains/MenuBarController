@@ -141,7 +141,7 @@ open class MenuBarScrollView: UIScrollView {
 
 extension MenuBarScrollView: UIGestureRecognizerDelegate {
     
-    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         // 两个都是竖向滚动视图时返回YES
         guard let responder = otherGestureRecognizer.view else { return false }
         if let responder = responder as? MenuBarScrollView {

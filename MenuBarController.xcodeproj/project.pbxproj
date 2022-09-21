@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1040E9622BED9873B5784240 /* Pods_MenuBarControllerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF010316AE6615AB373F152 /* Pods_MenuBarControllerDemo.framework */; };
+		180D8E8528DAFFD700CBE0D7 /* MenuBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D613D28D08AEB0086D9AE /* MenuBarController.framework */; };
 		182B31FB28D1697C00B1A9F1 /* MenuBarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FA28D1697C00B1A9F1 /* MenuBarScrollView.swift */; };
 		182B31FD28D1698F00B1A9F1 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FC28D1698F00B1A9F1 /* MenuBar.swift */; };
 		182B31FF28D1699E00B1A9F1 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FE28D1699E00B1A9F1 /* MenuBarView.swift */; };
-		1858DE3328D2D4460038E7C3 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FE28D1699E00B1A9F1 /* MenuBarView.swift */; };
 		186D614228D08AEB0086D9AE /* MenuBarController.docc in Sources */ = {isa = PBXBuildFile; fileRef = 186D614128D08AEB0086D9AE /* MenuBarController.docc */; };
 		186D614828D08AEB0086D9AE /* MenuBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D613D28D08AEB0086D9AE /* MenuBarController.framework */; };
 		186D614D28D08AEB0086D9AE /* MenuBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D614C28D08AEB0086D9AE /* MenuBarControllerTests.swift */; };
@@ -22,11 +22,7 @@
 		186D616728D08AFC0086D9AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186D616628D08AFC0086D9AE /* Assets.xcassets */; };
 		186D616A28D08AFC0086D9AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186D616828D08AFC0086D9AE /* LaunchScreen.storyboard */; };
 		186D617028D08E0E0086D9AE /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D616F28D08E0E0086D9AE /* MenuBarController.swift */; };
-		186D617128D08E130086D9AE /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D616F28D08E0E0086D9AE /* MenuBarController.swift */; };
 		187E57AC28D83D2700B129BA /* MenuBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E57AB28D83D2700B129BA /* MenuBarProtocol.swift */; };
-		187E57AD28D966DF00B129BA /* MenuBarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FA28D1697C00B1A9F1 /* MenuBarScrollView.swift */; };
-		187E57AE28D966E500B129BA /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FC28D1698F00B1A9F1 /* MenuBar.swift */; };
-		187E57AF28D966EB00B129BA /* MenuBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E57AB28D83D2700B129BA /* MenuBarProtocol.swift */; };
 		187E57B128D9977D00B129BA /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E57B028D9977D00B129BA /* TestView.swift */; };
 		187E57B328D9B89F00B129BA /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E57B228D9B89F00B129BA /* Tab1ViewController.swift */; };
 		187E57B628D9B91B00B129BA /* Tab1ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E57B428D9B91A00B129BA /* Tab1ContentViewController.swift */; };
@@ -106,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180D8E8528DAFFD700CBE0D7 /* MenuBarController.framework in Frameworks */,
 				1040E9622BED9873B5784240 /* Pods_MenuBarControllerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,15 +494,10 @@
 			files = (
 				187E57B628D9B91B00B129BA /* Tab1ContentViewController.swift in Sources */,
 				186D616228D08AFA0086D9AE /* ViewController.swift in Sources */,
-				187E57AD28D966DF00B129BA /* MenuBarScrollView.swift in Sources */,
-				187E57AE28D966E500B129BA /* MenuBar.swift in Sources */,
-				1858DE3328D2D4460038E7C3 /* MenuBarView.swift in Sources */,
 				187E57BB28D9BF4300B129BA /* TestViewController.swift in Sources */,
 				187E57B128D9977D00B129BA /* TestView.swift in Sources */,
-				186D617128D08E130086D9AE /* MenuBarController.swift in Sources */,
 				187E57B328D9B89F00B129BA /* Tab1ViewController.swift in Sources */,
 				186D615E28D08AFA0086D9AE /* AppDelegate.swift in Sources */,
-				187E57AF28D966EB00B129BA /* MenuBarProtocol.swift in Sources */,
 				187E57BE28D9C01C00B129BA /* Tab2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
