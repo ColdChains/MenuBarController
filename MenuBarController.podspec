@@ -40,7 +40,7 @@ Controller with menu bar that can slide and handles UIScrollView Nested.
   #
 
   # spec.license      = "MIT"
-  spec.license      = { :type => "MIT", :file => "LICENSE.md" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
