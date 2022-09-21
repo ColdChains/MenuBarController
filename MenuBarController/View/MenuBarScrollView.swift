@@ -26,7 +26,7 @@ public protocol MenuBarScrollViewDelegate: NSObjectProtocol {
     
 }
 
-extension MenuBarScrollViewDelegate {
+public extension MenuBarScrollViewDelegate {
     
     func menuBarScrollViewDidScroll(_ scrollView: UIScrollView, type: MenuBarScrollView.ViewType) {}
     

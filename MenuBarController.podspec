@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MenuBarController"
-  spec.version      = "0.0.2"
+  spec.version      = "1.0.0"
   spec.summary      = "Controller with menu bar that can slide and handles UIScrollView Nested"
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Controller with menu bar that can slide and handles UIScrollView Nested.
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "9.0"
+  spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -91,9 +91,10 @@ Controller with menu bar that can slide and handles UIScrollView Nested.
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "MenuBarController/**/*.{h,m}"
+  spec.source_files  = "MenuBarController/**/*.swift"
   spec.exclude_files = "Classes/Exclude"
-
+  spec.swift_version = "5.6"
+  
   # spec.public_header_files = "Classes/**/*.h"
 
 
@@ -133,6 +134,6 @@ Controller with menu bar that can slide and handles UIScrollView Nested.
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "Masonry"
+  spec.dependency "SnapKit"
 
 end

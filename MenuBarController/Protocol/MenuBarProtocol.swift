@@ -18,7 +18,7 @@ public protocol MenuBarProtocol: NSObjectProtocol {
     
 }
 
-extension MenuBarProtocol {
+public extension MenuBarProtocol {
     
     func menuBarScrollView() -> UIScrollView? { return nil }
     

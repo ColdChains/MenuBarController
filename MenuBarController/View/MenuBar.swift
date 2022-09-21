@@ -14,7 +14,7 @@ public protocol MenuBarDelegate: NSObjectProtocol {
     
 }
 
-extension MenuBarDelegate {
+public extension MenuBarDelegate {
     
     func menuBarDidSelect(_ menuBar: (UIView & MenuBarDelegate), at index: Int) {}
     
