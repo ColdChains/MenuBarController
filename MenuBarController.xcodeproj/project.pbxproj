@@ -11,15 +11,12 @@
 		182B31FB28D1697C00B1A9F1 /* MenuBarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FA28D1697C00B1A9F1 /* MenuBarScrollView.swift */; };
 		182B31FD28D1698F00B1A9F1 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FC28D1698F00B1A9F1 /* MenuBar.swift */; };
 		182B31FF28D1699E00B1A9F1 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FE28D1699E00B1A9F1 /* MenuBarView.swift */; };
+		1845F9A528DC5CA9007FBCF5 /* PresentMenuBarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845F9A428DC5CA9007FBCF5 /* PresentMenuBarHeader.swift */; };
 		184E80E128DC3A0B0016184D /* PresentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184E80DF28DC3A0B0016184D /* PresentViewController.xib */; };
 		184E80E228DC3A0B0016184D /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E80E028DC3A0B0016184D /* PresentViewController.swift */; };
 		184E80E528DC3A160016184D /* PresentMenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E80E428DC3A160016184D /* PresentMenuBarController.swift */; };
-		18590C5428DC434300918D6E /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FC28D1698F00B1A9F1 /* MenuBar.swift */; };
-		18590C5528DC434300918D6E /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FE28D1699E00B1A9F1 /* MenuBarView.swift */; };
-		18590C5628DC434300918D6E /* MenuBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E57AB28D83D2700B129BA /* MenuBarProtocol.swift */; };
-		18590C5728DC434300918D6E /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D616F28D08E0E0086D9AE /* MenuBarController.swift */; };
-		18590C5828DC434300918D6E /* PresentMenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E80E428DC3A160016184D /* PresentMenuBarController.swift */; };
-		18590C5928DC434300918D6E /* MenuBarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FA28D1697C00B1A9F1 /* MenuBarScrollView.swift */; };
+		186723C828DC6DD50023E756 /* MenuBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D613D28D08AEB0086D9AE /* MenuBarController.framework */; };
+		186723C928DC6DD50023E756 /* MenuBarController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 186D613D28D08AEB0086D9AE /* MenuBarController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		186D614228D08AEB0086D9AE /* MenuBarController.docc in Sources */ = {isa = PBXBuildFile; fileRef = 186D614128D08AEB0086D9AE /* MenuBarController.docc */; };
 		186D614828D08AEB0086D9AE /* MenuBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D613D28D08AEB0086D9AE /* MenuBarController.framework */; };
 		186D614D28D08AEB0086D9AE /* MenuBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D614C28D08AEB0086D9AE /* MenuBarControllerTests.swift */; };
@@ -52,6 +49,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		186723CA28DC6DD60023E756 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				186723C928DC6DD50023E756 /* MenuBarController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0C34A815E97C5DDFBD1E6D9D /* Pods-MenuBarController-MenuBarControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarController-MenuBarControllerTests.debug.xcconfig"; path = "Target Support Files/Pods-MenuBarController-MenuBarControllerTests/Pods-MenuBarController-MenuBarControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C8DBE8F69AC0077422A191B /* Pods-MenuBarControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuBarControllerDemo.debug.xcconfig"; path = "Target Support Files/Pods-MenuBarControllerDemo/Pods-MenuBarControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +70,7 @@
 		182B31FA28D1697C00B1A9F1 /* MenuBarScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarScrollView.swift; sourceTree = "<group>"; };
 		182B31FC28D1698F00B1A9F1 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		182B31FE28D1699E00B1A9F1 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		1845F9A428DC5CA9007FBCF5 /* PresentMenuBarHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentMenuBarHeader.swift; sourceTree = "<group>"; };
 		184E80DF28DC3A0B0016184D /* PresentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentViewController.xib; sourceTree = "<group>"; };
 		184E80E028DC3A0B0016184D /* PresentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
 		184E80E428DC3A160016184D /* PresentMenuBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMenuBarController.swift; sourceTree = "<group>"; };
@@ -114,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1040E9622BED9873B5784240 /* Pods_MenuBarControllerDemo.framework in Frameworks */,
+				186723C828DC6DD50023E756 /* MenuBarController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +177,7 @@
 		184E80E328DC3A160016184D /* Present */ = {
 			isa = PBXGroup;
 			children = (
+				1845F9A428DC5CA9007FBCF5 /* PresentMenuBarHeader.swift */,
 				184E80E428DC3A160016184D /* PresentMenuBarController.swift */,
 			);
 			path = Present;
@@ -320,6 +334,7 @@
 				186D615828D08AFA0086D9AE /* Frameworks */,
 				186D615928D08AFA0086D9AE /* Resources */,
 				C1CDA63C550C570589C93658 /* [CP] Embed Pods Frameworks */,
+				186723CA28DC6DD60023E756 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -510,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186D617028D08E0E0086D9AE /* MenuBarController.swift in Sources */,
+				1845F9A528DC5CA9007FBCF5 /* PresentMenuBarHeader.swift in Sources */,
 				186D614228D08AEB0086D9AE /* MenuBarController.docc in Sources */,
 				187E57AC28D83D2700B129BA /* MenuBarProtocol.swift in Sources */,
 				182B31FD28D1698F00B1A9F1 /* MenuBar.swift in Sources */,
@@ -535,16 +551,10 @@
 				186D616228D08AFA0086D9AE /* ViewController.swift in Sources */,
 				187E57BB28D9BF4300B129BA /* TestViewController.swift in Sources */,
 				187E57B128D9977D00B129BA /* TestView.swift in Sources */,
-				18590C5728DC434300918D6E /* MenuBarController.swift in Sources */,
-				18590C5828DC434300918D6E /* PresentMenuBarController.swift in Sources */,
 				187E57B328D9B89F00B129BA /* Tab1ViewController.swift in Sources */,
-				18590C5428DC434300918D6E /* MenuBar.swift in Sources */,
 				186D615E28D08AFA0086D9AE /* AppDelegate.swift in Sources */,
 				184E80E228DC3A0B0016184D /* PresentViewController.swift in Sources */,
 				187E57BE28D9C01C00B129BA /* Tab2ViewController.swift in Sources */,
-				18590C5528DC434300918D6E /* MenuBarView.swift in Sources */,
-				18590C5928DC434300918D6E /* MenuBarScrollView.swift in Sources */,
-				18590C5628DC434300918D6E /* MenuBarProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
