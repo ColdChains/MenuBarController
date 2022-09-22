@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1040E9622BED9873B5784240 /* Pods_MenuBarControllerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF010316AE6615AB373F152 /* Pods_MenuBarControllerDemo.framework */; };
-		180D8E8528DAFFD700CBE0D7 /* MenuBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D613D28D08AEB0086D9AE /* MenuBarController.framework */; };
 		182B31FB28D1697C00B1A9F1 /* MenuBarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FA28D1697C00B1A9F1 /* MenuBarScrollView.swift */; };
 		182B31FD28D1698F00B1A9F1 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FC28D1698F00B1A9F1 /* MenuBar.swift */; };
 		182B31FF28D1699E00B1A9F1 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FE28D1699E00B1A9F1 /* MenuBarView.swift */; };
+		184E80E128DC3A0B0016184D /* PresentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184E80DF28DC3A0B0016184D /* PresentViewController.xib */; };
+		184E80E228DC3A0B0016184D /* PresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E80E028DC3A0B0016184D /* PresentViewController.swift */; };
+		184E80E528DC3A160016184D /* PresentMenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E80E428DC3A160016184D /* PresentMenuBarController.swift */; };
+		18590C5428DC434300918D6E /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FC28D1698F00B1A9F1 /* MenuBar.swift */; };
+		18590C5528DC434300918D6E /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FE28D1699E00B1A9F1 /* MenuBarView.swift */; };
+		18590C5628DC434300918D6E /* MenuBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E57AB28D83D2700B129BA /* MenuBarProtocol.swift */; };
+		18590C5728DC434300918D6E /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D616F28D08E0E0086D9AE /* MenuBarController.swift */; };
+		18590C5828DC434300918D6E /* PresentMenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E80E428DC3A160016184D /* PresentMenuBarController.swift */; };
+		18590C5928DC434300918D6E /* MenuBarScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B31FA28D1697C00B1A9F1 /* MenuBarScrollView.swift */; };
 		186D614228D08AEB0086D9AE /* MenuBarController.docc in Sources */ = {isa = PBXBuildFile; fileRef = 186D614128D08AEB0086D9AE /* MenuBarController.docc */; };
 		186D614828D08AEB0086D9AE /* MenuBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D613D28D08AEB0086D9AE /* MenuBarController.framework */; };
 		186D614D28D08AEB0086D9AE /* MenuBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D614C28D08AEB0086D9AE /* MenuBarControllerTests.swift */; };
@@ -51,6 +59,9 @@
 		182B31FA28D1697C00B1A9F1 /* MenuBarScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarScrollView.swift; sourceTree = "<group>"; };
 		182B31FC28D1698F00B1A9F1 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		182B31FE28D1699E00B1A9F1 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		184E80DF28DC3A0B0016184D /* PresentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentViewController.xib; sourceTree = "<group>"; };
+		184E80E028DC3A0B0016184D /* PresentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentViewController.swift; sourceTree = "<group>"; };
+		184E80E428DC3A160016184D /* PresentMenuBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMenuBarController.swift; sourceTree = "<group>"; };
 		186D613D28D08AEB0086D9AE /* MenuBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MenuBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		186D614028D08AEB0086D9AE /* MenuBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuBarController.h; sourceTree = "<group>"; };
 		186D614128D08AEB0086D9AE /* MenuBarController.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MenuBarController.docc; sourceTree = "<group>"; };
@@ -102,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180D8E8528DAFFD700CBE0D7 /* MenuBarController.framework in Frameworks */,
 				1040E9622BED9873B5784240 /* Pods_MenuBarControllerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +136,37 @@
 				187E57AB28D83D2700B129BA /* MenuBarProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		184E80D828DC35890016184D /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				187E57B228D9B89F00B129BA /* Tab1ViewController.swift */,
+				187E57B428D9B91A00B129BA /* Tab1ContentViewController.swift */,
+				187E57B528D9B91A00B129BA /* Tab1ContentViewController.xib */,
+				187E57BC28D9C01C00B129BA /* Tab2ViewController.swift */,
+				187E57BD28D9C01C00B129BA /* Tab2ViewController.xib */,
+				187E57BA28D9BF4300B129BA /* TestViewController.swift */,
+				187E57B028D9977D00B129BA /* TestView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		184E80DE28DC3A0B0016184D /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				184E80E028DC3A0B0016184D /* PresentViewController.swift */,
+				184E80DF28DC3A0B0016184D /* PresentViewController.xib */,
+			);
+			path = Present;
+			sourceTree = "<group>";
+		};
+		184E80E328DC3A160016184D /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				184E80E428DC3A160016184D /* PresentMenuBarController.swift */,
+			);
+			path = Present;
 			sourceTree = "<group>";
 		};
 		186D613328D08AEB0086D9AE = {
@@ -154,9 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				186D614028D08AEB0086D9AE /* MenuBarController.h */,
-				187E57C028D9C22D00B129BA /* Controller */,
-				182B31F928D1694B00B1A9F1 /* Protocol */,
-				182B31F828D1692700B1A9F1 /* View */,
+				184E80E328DC3A160016184D /* Present */,
+				187E57C028D9C22D00B129BA /* MenuBar */,
 				186D614128D08AEB0086D9AE /* MenuBarController.docc */,
 			);
 			path = MenuBarController;
@@ -175,13 +215,8 @@
 			children = (
 				186D615D28D08AFA0086D9AE /* AppDelegate.swift */,
 				186D616128D08AFA0086D9AE /* ViewController.swift */,
-				187E57B228D9B89F00B129BA /* Tab1ViewController.swift */,
-				187E57B428D9B91A00B129BA /* Tab1ContentViewController.swift */,
-				187E57B528D9B91A00B129BA /* Tab1ContentViewController.xib */,
-				187E57BC28D9C01C00B129BA /* Tab2ViewController.swift */,
-				187E57BD28D9C01C00B129BA /* Tab2ViewController.xib */,
-				187E57BA28D9BF4300B129BA /* TestViewController.swift */,
-				187E57B028D9977D00B129BA /* TestView.swift */,
+				184E80DE28DC3A0B0016184D /* Present */,
+				184E80D828DC35890016184D /* MenuBar */,
 				186D616328D08AFA0086D9AE /* Main.storyboard */,
 				186D616628D08AFC0086D9AE /* Assets.xcassets */,
 				186D616828D08AFC0086D9AE /* LaunchScreen.storyboard */,
@@ -190,12 +225,14 @@
 			path = MenuBarControllerDemo;
 			sourceTree = "<group>";
 		};
-		187E57C028D9C22D00B129BA /* Controller */ = {
+		187E57C028D9C22D00B129BA /* MenuBar */ = {
 			isa = PBXGroup;
 			children = (
 				186D616F28D08E0E0086D9AE /* MenuBarController.swift */,
+				182B31F928D1694B00B1A9F1 /* Protocol */,
+				182B31F828D1692700B1A9F1 /* View */,
 			);
-			path = Controller;
+			path = MenuBar;
 			sourceTree = "<group>";
 		};
 		655EF2F74E8AE2854088A842 /* Frameworks */ = {
@@ -357,6 +394,7 @@
 				186D616A28D08AFC0086D9AE /* LaunchScreen.storyboard in Resources */,
 				186D616728D08AFC0086D9AE /* Assets.xcassets in Resources */,
 				186D616528D08AFA0086D9AE /* Main.storyboard in Resources */,
+				184E80E128DC3A0B0016184D /* PresentViewController.xib in Resources */,
 				187E57BF28D9C01C00B129BA /* Tab2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +513,7 @@
 				186D614228D08AEB0086D9AE /* MenuBarController.docc in Sources */,
 				187E57AC28D83D2700B129BA /* MenuBarProtocol.swift in Sources */,
 				182B31FD28D1698F00B1A9F1 /* MenuBar.swift in Sources */,
+				184E80E528DC3A160016184D /* PresentMenuBarController.swift in Sources */,
 				182B31FB28D1697C00B1A9F1 /* MenuBarScrollView.swift in Sources */,
 				182B31FF28D1699E00B1A9F1 /* MenuBarView.swift in Sources */,
 			);
@@ -496,9 +535,16 @@
 				186D616228D08AFA0086D9AE /* ViewController.swift in Sources */,
 				187E57BB28D9BF4300B129BA /* TestViewController.swift in Sources */,
 				187E57B128D9977D00B129BA /* TestView.swift in Sources */,
+				18590C5728DC434300918D6E /* MenuBarController.swift in Sources */,
+				18590C5828DC434300918D6E /* PresentMenuBarController.swift in Sources */,
 				187E57B328D9B89F00B129BA /* Tab1ViewController.swift in Sources */,
+				18590C5428DC434300918D6E /* MenuBar.swift in Sources */,
 				186D615E28D08AFA0086D9AE /* AppDelegate.swift in Sources */,
+				184E80E228DC3A0B0016184D /* PresentViewController.swift in Sources */,
 				187E57BE28D9C01C00B129BA /* Tab2ViewController.swift in Sources */,
+				18590C5528DC434300918D6E /* MenuBarView.swift in Sources */,
+				18590C5928DC434300918D6E /* MenuBarScrollView.swift in Sources */,
+				18590C5628DC434300918D6E /* MenuBarProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

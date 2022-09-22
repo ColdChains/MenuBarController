@@ -61,7 +61,10 @@ open class MenuBarView: UIView {
 
     /// 竖向滚动视图最大偏移量
     open var verticalMaxOffset: CGFloat {
-        return headerView == nil ? 0 : (headerView?.frame.size.height ?? 0 + headerBottomMargin - headerScrollTopMargin)
+        if let headerView = headerView {
+            return headerView.frame.size.height + headerBottomMargin - headerScrollTopMargin
+        }
+        return 0
     }
 
     /// 是否点击状态栏
@@ -353,7 +356,7 @@ open class MenuBarView: UIView {
     
     private func layoutHorizontalScrollViewHeight() {
         guard let _ = horizontalScrollView.superview else { return }
-        let horizontalViewHeightOffset = (headerView != nil ? headerScrollTopMargin : 0) + (menuBar != nil ? (menuBar?.frame.size.height ?? 0 + menuBottomMargin) : 0)
+        let horizontalViewHeightOffset = (headerView != nil ? headerScrollTopMargin : 0) + (menuBar != nil ? ((menuBar?.frame.size.height ?? 0) + menuBottomMargin) : 0)
         horizontalScrollView.snp.updateConstraints({ make in
             make.height.equalToSuperview().offset(-horizontalViewHeightOffset)
         })
