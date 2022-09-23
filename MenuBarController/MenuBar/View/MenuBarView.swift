@@ -258,9 +258,9 @@ open class MenuBarView: UIView {
             
             for i in 0..<views.count {
                 
-                let subView = views[i]
-                horizontalScrollView.addSubview(subView)
-                subView.snp.remakeConstraints { make in
+                let view = views[i]
+                horizontalScrollView.addSubview(view)
+                view.snp.remakeConstraints { make in
                     if i == 0 {
                         make.left.equalTo(horizontalScrollView)
                     } else if i == views.count - 1 {
@@ -273,9 +273,9 @@ open class MenuBarView: UIView {
                 }
                 
                 // 添加观察者
-                if let menuBarView = subView as? MenuBarView {
-                    for view in menuBarView.views {
-                        if let scrollView = scrollViewFrom(view) {
+                if let menuBarView = view as? MenuBarView {
+                    for subView in menuBarView.views {
+                        if let scrollView = scrollViewFrom(subView) {
                             if observerDictionary[String(format: "%p", scrollView)] == nil {
                                 observerDictionary[String(format: "%p", scrollView)] = 1
                                 scrollView.addObserver(self, forKeyPath: "contentOffset", options: [.new, .old], context: nil)
@@ -286,7 +286,7 @@ open class MenuBarView: UIView {
                         menuBarView.scrollsToTop = scrollsToTop
                     }
                 } else {
-                    if let scrollView = scrollViewFrom(subView) {
+                    if let scrollView = scrollViewFrom(view) {
                         if observerDictionary[String(format: "%p", scrollView)] == nil {
                             observerDictionary[String(format: "%p", scrollView)] = 1
                             scrollView.addObserver(self, forKeyPath: "contentOffset", options: [.new, .old], context: nil)
@@ -618,16 +618,22 @@ open class MenuBarView: UIView {
         if let verticalScrollView = verticalScrollView, observerDictionary[String(format: "%p", verticalScrollView)] != nil, observerDictionary.count == 1 {
             return
         }
-        for subView in views {
-            if let subMenuBarView = subView as? MenuBarView {
-                for view in subMenuBarView.views {
-                    if let scrollView = scrollViewFrom(view), observerDictionary[String(format: "%p", scrollView)] != nil {
+        for view in views {
+            if let menuBarView = view as? MenuBarView {
+                for subView in menuBarView.views {
+                    if let scrollView = scrollViewFrom(subView), observerDictionary[String(format: "%p", scrollView)] != nil {
                         observerDictionary.removeValue(forKey: String(format: "%p", scrollView))
+                        scrollView .removeObserver(self, forKeyPath: "contentOffset", context: nil)
                     }
                 }
-            } else {
-                if let scrollView = scrollViewFrom(subView), observerDictionary[String(format: "%p", scrollView)] != nil {
+                if let scrollView = menuBarView.verticalScrollView, observerDictionary[String(format: "%p", scrollView)] != nil {
                     observerDictionary.removeValue(forKey: String(format: "%p", scrollView))
+                    scrollView .removeObserver(self, forKeyPath: "contentOffset", context: nil)
+                }
+            } else {
+                if let scrollView = scrollViewFrom(view), observerDictionary[String(format: "%p", scrollView)] != nil {
+                    observerDictionary.removeValue(forKey: String(format: "%p", scrollView))
+                    scrollView .removeObserver(self, forKeyPath: "contentOffset", context: nil)
                 }
             }
         }
@@ -670,11 +676,11 @@ open class MenuBarView: UIView {
     
     /// 子视图回到顶部
     open func subScrollViewScrollToTop(with animated:Bool) {
-        if let currentView = currentView as? MenuBarView {
+        if let menuBarView = currentView as? MenuBarView {
             outsideCanScroll = true
             verticalScrollView?.isTouching = true
-            currentView.scrollToTop(with: animated)
-            currentView.subScrollViewScrollToTop(with: animated)
+            menuBarView.scrollToTop(with: animated)
+            menuBarView.subScrollViewScrollToTop(with: animated)
         } else {
             if let scrollView = scrollViewFrom(currentView), scrollView.contentOffset.y > 0 {
                 outsideCanScroll = true

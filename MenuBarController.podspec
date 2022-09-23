@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MenuBarController"
-  spec.version      = "1.0.1"
+  spec.version      = "1.1.0"
   spec.summary      = "Controller with menu bar that can slide and handles UIScrollView Nested"
 
   # This description is used to generate tags and improve search results.
@@ -91,9 +91,17 @@ Controller with menu bar that can slide and handles UIScrollView Nested.
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "MenuBarController/**/*.swift"
+  # spec.source_files  = "MenuBarController/**/*.swift"
   spec.exclude_files = "Classes/Exclude"
   spec.swift_version = "5.6"
+    
+  spec.subspec "MenuBar" do |ss|
+    ss.source_files = "MenuBarController/MenuBar/**/*.swift"
+  end
+  spec.subspec "Present" do |ss|
+    ss.source_files = "MenuBarController/Present/**/*.swift"
+    ss.dependency "MenuBarController/MenuBar"
+  end
   
   # spec.public_header_files = "Classes/**/*.h"
 

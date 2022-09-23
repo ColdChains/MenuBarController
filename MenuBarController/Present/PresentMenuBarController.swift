@@ -15,10 +15,10 @@ extension PresentMenuBarController {
         case max
     }
     
-    public enum VelocityRate: CGFloat {
+    public enum DecelerationRate: CGFloat {
         case min = 0
-        case slow = 0.1
-        case normal = 0.15
+        case slow = 0.08
+        case normal = 0.12
         case fast = 0.2
         case max = 1
     }
@@ -43,7 +43,7 @@ public protocol PresentMenuBarControllerDataSource {
     func presentMenuBarControllerTopCornerRadius(_ presentMenuBarController: PresentMenuBarController) -> CGFloat
 
     /// 惯性速度灵敏度 默认normal
-    func presentMenuBarControllerVelocityRate(_ presentMenuBarController: PresentMenuBarController) -> PresentMenuBarController.VelocityRate
+    func presentMenuBarControllerVelocityRate(_ presentMenuBarController: PresentMenuBarController) -> PresentMenuBarController.DecelerationRate
 
     /// 蒙层颜色 默认黑色 0.5透明度
     func presentMenuBarControllerMaskColor(_ presentMenuBarController: PresentMenuBarController) -> UIColor?
@@ -63,7 +63,7 @@ public extension PresentMenuBarControllerDataSource {
 
     func presentMenuBarControllerTopCornerRadius(_ presentMenuBarController: PresentMenuBarController) -> CGFloat { return 0 }
 
-    func presentMenuBarControllerVelocityRate(_ presentMenuBarController: PresentMenuBarController) -> PresentMenuBarController.VelocityRate { return .normal }
+    func presentMenuBarControllerVelocityRate(_ presentMenuBarController: PresentMenuBarController) -> PresentMenuBarController.DecelerationRate { return .normal }
 
     func presentMenuBarControllerMaskColor(_ presentMenuBarController: PresentMenuBarController) -> UIColor { return UIColor(white: 0, alpha: 0.5) }
     
@@ -100,14 +100,14 @@ open class PresentMenuBarController: MenuBarController {
     /// 顶部圆角 默认0
     open var topCornerRadius: CGFloat = 0
 
-    /// 惯性速度灵敏度 默认normal
-    open var velocityRate: VelocityRate = .normal {
+    /// 惯性减速速率 值越大减速越快 默认normal
+    open var decelerationRate: DecelerationRate = .normal {
         didSet {
-            if velocityRate.rawValue < VelocityRate.min.rawValue {
-                velocityRate = .min
+            if decelerationRate.rawValue < DecelerationRate.min.rawValue {
+                decelerationRate = .min
             }
-            if velocityRate.rawValue > VelocityRate.max.rawValue {
-                velocityRate = .max
+            if decelerationRate.rawValue > DecelerationRate.max.rawValue {
+                decelerationRate = .max
             }
         }
     }
@@ -174,7 +174,7 @@ open class PresentMenuBarController: MenuBarController {
             middleHeight = dataSource.presentMenuBarControllerMiddleHeight(self)
             maxHeight = dataSource.presentMenuBarControllerMaxHeight(self)
             topCornerRadius = dataSource.presentMenuBarControllerTopCornerRadius(self)
-            velocityRate = dataSource.presentMenuBarControllerVelocityRate(self)
+            decelerationRate = dataSource.presentMenuBarControllerVelocityRate(self)
             maskColor = dataSource.presentMenuBarControllerMaskColor(self)
         }
         let h = defaultHeight == .min ? minHeight : defaultHeight == .middle ? middleHeight : maxHeight
@@ -222,17 +222,18 @@ open class PresentMenuBarController: MenuBarController {
         
         if scrollView != verticalScrollView { return }
         
+        let velocityPoint = scrollView.panGestureRecognizer.velocity(in: scrollView.panGestureRecognizer.view?.superview)
+        
         DispatchQueue.main.async {
             
             if decelerate {
                 scrollView.setContentOffset(scrollView.contentOffset, animated: false)
             }
             
-            let velocityPoint = scrollView.panGestureRecognizer.velocity(in: scrollView.panGestureRecognizer.view?.superview)
             var h = scrollView.contentOffset.y;
             if scrollView.contentOffset.y < self.maxHeight {
-                h -= velocityPoint.y / (101 - self.velocityRate.rawValue * 100)
-            } // (20, 15, 10) 101-1 (101-) 0-100 (/100) 0-1
+                h -= velocityPoint.y / (self.decelerationRate.rawValue * 100 + 1)
+            }
             
             if h > self.middleHeight + (self.maxHeight - self.middleHeight) / 2 {
                 h = self.maxHeight

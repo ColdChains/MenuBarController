@@ -209,8 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				186D614028D08AEB0086D9AE /* MenuBarController.h */,
-				184E80E328DC3A160016184D /* Present */,
 				187E57C028D9C22D00B129BA /* MenuBar */,
+				184E80E328DC3A160016184D /* Present */,
 				186D614128D08AEB0086D9AE /* MenuBarController.docc */,
 			);
 			path = MenuBarController;
@@ -229,8 +229,8 @@
 			children = (
 				186D615D28D08AFA0086D9AE /* AppDelegate.swift */,
 				186D616128D08AFA0086D9AE /* ViewController.swift */,
-				184E80DE28DC3A0B0016184D /* Present */,
 				184E80D828DC35890016184D /* MenuBar */,
+				184E80DE28DC3A0B0016184D /* Present */,
 				186D616328D08AFA0086D9AE /* Main.storyboard */,
 				186D616628D08AFC0086D9AE /* Assets.xcassets */,
 				186D616828D08AFC0086D9AE /* LaunchScreen.storyboard */,
@@ -819,7 +819,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lax.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lax.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -848,7 +848,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lax.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lax.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

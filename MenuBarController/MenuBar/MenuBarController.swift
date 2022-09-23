@@ -219,6 +219,7 @@ open class MenuBarController: UIViewController {
     /// 头视图
     open var headerView: UIView? {
         willSet {
+            if !isViewLoaded { return }
             headerView?.removeFromSuperview()
         }
         didSet {
@@ -238,6 +239,7 @@ open class MenuBarController: UIViewController {
     /// 尾视图
     open var footerView: UIView? {
         willSet {
+            if !isViewLoaded { return }
             footerView?.removeFromSuperview()
         }
         didSet {
@@ -253,6 +255,7 @@ open class MenuBarController: UIViewController {
     /// 菜单视图
     open var menuBar: UIView? {
         willSet {
+            if !isViewLoaded { return }
             menuBar?.removeFromSuperview()
         }
         didSet {
@@ -268,6 +271,7 @@ open class MenuBarController: UIViewController {
     /// 子视图数组
     open var viewControllers: [UIViewController] = [] {
         willSet {
+            if !isViewLoaded { return }
             removeSubViewObserver()
             for viewController in viewControllers {
                 viewController.view.removeFromSuperview()
@@ -753,16 +757,22 @@ open class MenuBarController: UIViewController {
         if let verticalScrollView = verticalScrollView, observerDictionary[String(format: "%p", verticalScrollView)] != nil, observerDictionary.count == 1 {
             return
         }
-        for subView in viewControllers {
-            if let subMenuBarController = subView as? MenuBarController {
-                for view in subMenuBarController.viewControllers {
-                    if let scrollView = scrollViewFrom(view), observerDictionary[String(format: "%p", scrollView)] != nil {
+        for viewController in viewControllers {
+            if let menuBarController = viewController as? MenuBarController {
+                for subViewController in menuBarController.viewControllers {
+                    if let scrollView = scrollViewFrom(subViewController), observerDictionary[String(format: "%p", scrollView)] != nil {
                         observerDictionary.removeValue(forKey: String(format: "%p", scrollView))
+                        scrollView .removeObserver(self, forKeyPath: "contentOffset", context: nil)
                     }
                 }
-            } else {
-                if let scrollView = scrollViewFrom(subView), observerDictionary[String(format: "%p", scrollView)] != nil {
+                if let scrollView = menuBarController.verticalScrollView, observerDictionary[String(format: "%p", scrollView)] != nil {
                     observerDictionary.removeValue(forKey: String(format: "%p", scrollView))
+                    scrollView .removeObserver(self, forKeyPath: "contentOffset", context: nil)
+                }
+            } else {
+                if let scrollView = scrollViewFrom(viewController), observerDictionary[String(format: "%p", scrollView)] != nil {
+                    observerDictionary.removeValue(forKey: String(format: "%p", scrollView))
+                    scrollView .removeObserver(self, forKeyPath: "contentOffset", context: nil)
                 }
             }
         }
@@ -802,11 +812,11 @@ open class MenuBarController: UIViewController {
     
     /// 子视图回到顶部
     open func subScrollViewScrollToTop(with animated:Bool) {
-        if let currentView = currentViewController as? MenuBarController {
+        if let menuBarController = currentViewController as? MenuBarController {
             outsideCanScroll = true
             verticalScrollView?.isTouching = true
-            currentView.scrollToTop(with: animated)
-            currentView.subScrollViewScrollToTop(with: animated)
+            menuBarController.scrollToTop(with: animated)
+            menuBarController.subScrollViewScrollToTop(with: animated)
         } else {
             if let scrollView = scrollViewFrom(currentViewController), scrollView.contentOffset.y > 0 {
                 outsideCanScroll = true
