@@ -58,10 +58,10 @@ class ViewController: MenuBarController {
         pmbc.viewControllers = [vc]
         
         // 自定义高度 也可通过协议修改
-        pmbc.minHeight = 200;
-        pmbc.middleHeight = 400;
-        pmbc.maxHeight = 600;
-        pmbc.defaultHeight = .middle;
+//        pmbc.minHeight = 200;
+//        pmbc.middleHeight = 400;
+//        pmbc.maxHeight = 600;
+//        pmbc.defaultHeight = .middle;
         
         // 接管状态栏样式
         pmbc.modalPresentationStyle = .custom

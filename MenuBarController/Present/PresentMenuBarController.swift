@@ -65,7 +65,7 @@ public extension PresentMenuBarControllerDataSource {
 
     func presentMenuBarControllerVelocityRate(_ presentMenuBarController: PresentMenuBarController) -> PresentMenuBarController.DecelerationRate { return .normal }
 
-    func presentMenuBarControllerMaskColor(_ presentMenuBarController: PresentMenuBarController) -> UIColor { return UIColor(white: 0, alpha: 0.5) }
+    func presentMenuBarControllerMaskColor(_ presentMenuBarController: PresentMenuBarController) -> UIColor? { return UIColor(white: 0, alpha: 0.5) }
     
 }
 
@@ -113,7 +113,7 @@ open class PresentMenuBarController: MenuBarController {
     }
 
     /// 蒙层颜色 默认黑色 0.5透明度
-    open var maskColor: UIColor = UIColor(white: 0, alpha: 0.5) {
+    open var maskColor: UIColor? = UIColor(white: 0, alpha: 0.5) {
         didSet {
             maskView?.backgroundColor = maskColor
         }
