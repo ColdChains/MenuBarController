@@ -52,4 +52,8 @@ extension PresentViewController: PresentMenuBarControllerDataSource {
         return .middle
     }
     
+    func presentMenuBarControllerTopCornerRadius(_ presentMenuBarController: PresentMenuBarController) -> CGFloat? {
+        return 16
+    }
+    
 }

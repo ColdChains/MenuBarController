@@ -124,6 +124,9 @@ open class PresentMenuBarController: MenuBarController {
     /// 是否拖拽子视图
     private var pointInSubView = false
     
+    /// 需要更新页面
+    private var needUpdate = true
+    
 
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,9 +135,7 @@ open class PresentMenuBarController: MenuBarController {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: ScreenHeight))
         headerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapAction(_:))))
         self.headerView = headerView;
-        
-        // todo: 切换控制器需要刷新
-        updateDataSource()
+
     }
     
     open override func viewDidLayoutSubviews() {
@@ -155,6 +156,9 @@ open class PresentMenuBarController: MenuBarController {
         UIView.animate(withDuration: 0.25) {
             self.maskView?.backgroundColor = self.maskColor
         }
+        DispatchQueue.main.async {
+            self.updateDataSource(animated: true)
+        }
     }
     
     open override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
@@ -164,7 +168,18 @@ open class PresentMenuBarController: MenuBarController {
         super.dismiss(animated: flag, completion: completion)
     }
     
-    private func updateDataSource() {
+    /// 重置控制器状态
+    /// - Parameter animated: 动画
+    open func resetPresentController(animated: Bool = true) {
+        needUpdate = true
+        updateDataSource(animated: animated)
+    }
+    
+    private func updateDataSource(animated: Bool) {
+        if !needUpdate {
+            return
+        }
+        needUpdate = false
         if let dataSource = currentViewController as? (UIViewController & PresentMenuBarControllerDataSource) {
             if let defaultHeight =  dataSource.presentMenuBarControllerDefaultHeight(self) {
                 self.defaultHeight = defaultHeight
@@ -189,7 +204,7 @@ open class PresentMenuBarController: MenuBarController {
             }
         }
         let h = defaultHeight == .min ? minHeight : defaultHeight == .middle ? middleHeight : maxHeight
-        verticalScrollView?.setContentOffset(CGPoint(x: 0, y: h), animated: true)
+        verticalScrollView?.setContentOffset(CGPoint(x: 0, y: h), animated: animated)
         headerScrollTopMargin = ScreenHeight - maxHeight
     }
     

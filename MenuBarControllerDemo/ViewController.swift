@@ -37,10 +37,6 @@ class ViewController: MenuBarController {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // 测试MenuBarView
-//        let vc = TestViewController()
-//        vc.modalPresentationStyle = .fullScreen
-//        present(vc, animated: true, completion: nil)
         
         // 测试present
         // 自定义topView
@@ -54,18 +50,11 @@ class ViewController: MenuBarController {
         let vc = PresentViewController()
         let pmbc = PresentMenuBarController()
         pmbc.menuBar = topView;
-        pmbc.topCornerRadius = 16;
         pmbc.viewControllers = [vc]
         
-        // 自定义高度 也可通过协议修改
-//        pmbc.minHeight = 200;
-//        pmbc.middleHeight = 400;
-//        pmbc.maxHeight = 600;
-//        pmbc.defaultHeight = .middle;
-        
         // 接管状态栏样式
-        pmbc.modalPresentationStyle = .custom
-        pmbc.modalPresentationCapturesStatusBarAppearance = true
+//        pmbc.modalPresentationStyle = .custom
+//        pmbc.modalPresentationCapturesStatusBarAppearance = true
         present(pmbc, animated: true, completion: nil)
         
     }

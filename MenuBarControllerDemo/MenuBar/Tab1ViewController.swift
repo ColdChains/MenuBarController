@@ -12,6 +12,7 @@ class Tab1ViewController: MenuBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .gray
         
         // 设置顶部停留间距
         headerScrollTopMargin = 0
