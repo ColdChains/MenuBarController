@@ -577,7 +577,6 @@ open class MenuBarController: UIViewController {
         super.viewDidLoad()
         let shouldNested = shouldNested
         self.shouldNested = shouldNested
-//        modalPresentationStyle = currentViewController?.modalPresentationStyle ?? .fullScreen
     }
     
     deinit {
