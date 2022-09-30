@@ -93,7 +93,7 @@ open class PresentMenuBarController: MenuBarController {
     open var middleHeight: CGFloat = 0
 
     /// 最大高度 默认屏幕高度-状态栏高度
-    open var maxHeight: CGFloat = 0
+    open var maxHeight: CGFloat = ScreenHeight - StatusBarHeight
 
     /// 顶部圆角 默认0
     open var topCornerRadius: CGFloat = 0
@@ -136,6 +136,7 @@ open class PresentMenuBarController: MenuBarController {
         headerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapAction(_:))))
         self.headerView = headerView;
 
+        updateDataSource()
     }
     
     open override func viewDidLayoutSubviews() {
@@ -144,6 +145,16 @@ open class PresentMenuBarController: MenuBarController {
             clips(menuBar, with: topCornerRadius)
         } else {
             clips(horizontalScrollView, with: topCornerRadius)
+        }
+    }
+    
+    open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + (size.width > size.height ? 0.1 : 0.25)) {
+            if let menuBar = self.menuBar {
+                self.clips(menuBar, with: self.topCornerRadius)
+            } else {
+                self.clips(self.horizontalScrollView, with: self.topCornerRadius)
+            }
         }
     }
     
@@ -157,7 +168,7 @@ open class PresentMenuBarController: MenuBarController {
             self.maskView?.backgroundColor = self.maskColor
         }
         DispatchQueue.main.async {
-            self.updateDataSource(animated: true)
+            self.updatePresentController()
         }
     }
     
@@ -172,40 +183,52 @@ open class PresentMenuBarController: MenuBarController {
     /// - Parameter animated: 动画
     open func resetPresentController(animated: Bool = true) {
         needUpdate = true
-        updateDataSource(animated: animated)
+        updatePresentController()
     }
     
-    private func updateDataSource(animated: Bool) {
+    private func updatePresentController(animated: Bool = true) {
         if !needUpdate {
             return
         }
         needUpdate = false
-        if let dataSource = currentViewController as? (UIViewController & PresentMenuBarControllerDataSource) {
-            if let defaultHeight =  dataSource.presentMenuBarControllerDefaultHeight(self) {
-                self.defaultHeight = defaultHeight
-            }
-            if let minHeight = dataSource.presentMenuBarControllerMinHeight(self) {
-                self.minHeight = minHeight
-            }
-            if let middleHeight = dataSource.presentMenuBarControllerMiddleHeight(self) {
-                self.middleHeight = middleHeight
-            }
-            if let maxHeight = dataSource.presentMenuBarControllerMaxHeight(self) {
-                self.maxHeight = maxHeight
-            }
-            if let topCornerRadius = dataSource.presentMenuBarControllerTopCornerRadius(self) {
-                self.topCornerRadius = topCornerRadius
-            }
-            if let decelerationRate = dataSource.presentMenuBarControllerVelocityRate(self) {
-                self.decelerationRate = decelerationRate
-            }
-            if let maskColor = dataSource.presentMenuBarControllerMaskColor(self) {
-                self.maskColor = maskColor
-            }
+        // temp：present一个子控制器滑动到顶部会闪烁
+        if viewControllers.count == 1 {
+            var vcs = viewControllers
+            vcs.append(UIViewController())
+            viewControllers = vcs
+            horizontalScrollView.isScrollEnabled = false
         }
+        updateDataSource()
         let h = defaultHeight == .min ? minHeight : defaultHeight == .middle ? middleHeight : maxHeight
         verticalScrollView?.setContentOffset(CGPoint(x: 0, y: h), animated: animated)
         headerScrollTopMargin = ScreenHeight - maxHeight
+    }
+    
+    private func updateDataSource() {
+        guard let dataSource = currentViewController as? (UIViewController & PresentMenuBarControllerDataSource) else {
+            return
+        }
+        if let defaultHeight =  dataSource.presentMenuBarControllerDefaultHeight(self) {
+            self.defaultHeight = defaultHeight
+        }
+        if let minHeight = dataSource.presentMenuBarControllerMinHeight(self) {
+            self.minHeight = minHeight
+        }
+        if let middleHeight = dataSource.presentMenuBarControllerMiddleHeight(self) {
+            self.middleHeight = middleHeight
+        }
+        if let maxHeight = dataSource.presentMenuBarControllerMaxHeight(self) {
+            self.maxHeight = maxHeight
+        }
+        if let topCornerRadius = dataSource.presentMenuBarControllerTopCornerRadius(self) {
+            self.topCornerRadius = topCornerRadius
+        }
+        if let decelerationRate = dataSource.presentMenuBarControllerVelocityRate(self) {
+            self.decelerationRate = decelerationRate
+        }
+        if let maskColor = dataSource.presentMenuBarControllerMaskColor(self) {
+            self.maskColor = maskColor
+        }
     }
     
     @objc private func tapAction(_ sender: UITapGestureRecognizer) {
@@ -222,11 +245,10 @@ open class PresentMenuBarController: MenuBarController {
     open override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         super.scrollViewDidScroll(scrollView)
         if scrollView != verticalScrollView { return }
-            // 解决惯性过大时上滑会超过最大高度
-            if scrollView.contentOffset.y >= maxHeight {
-                scrollView.contentOffset = CGPoint(x: scrollView.contentOffset.x, y: maxHeight);
-            }
-        
+        // 解决惯性过大时上滑会超过最大高度
+        if scrollView.contentOffset.y >= maxHeight {
+            scrollView.contentOffset = CGPoint(x: scrollView.contentOffset.x, y: maxHeight);
+        }
     }
     
     open override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {

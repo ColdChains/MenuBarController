@@ -19,7 +19,7 @@ class ViewController: MenuBarController {
         
         let footerView = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 44))
         footerView.backgroundColor = .red
-        footerView.text = "FooterView"
+        footerView.text = "Present"
         footerView.textAlignment = .center
         // 设置底部视图
         self.footerView = footerView
@@ -48,14 +48,14 @@ class ViewController: MenuBarController {
         topView.addSubview(bar)
         
         let vc = PresentViewController()
-        let pmbc = PresentMenuBarController()
-        pmbc.menuBar = topView;
-        pmbc.viewControllers = [vc]
+        let mbc = PresentMenuBarController()
+        mbc.menuBar = topView;
+        mbc.viewControllers = [vc]
         
         // 接管状态栏样式
-//        pmbc.modalPresentationStyle = .custom
-//        pmbc.modalPresentationCapturesStatusBarAppearance = true
-        present(pmbc, animated: true, completion: nil)
+//        mbc.modalPresentationStyle = .custom
+//        mbc.modalPresentationCapturesStatusBarAppearance = true
+        present(mbc, animated: true, completion: nil)
         
     }
 

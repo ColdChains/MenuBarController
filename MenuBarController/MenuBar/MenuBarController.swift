@@ -321,14 +321,15 @@ open class MenuBarController: UIViewController {
         verticalScrollView?.snp.remakeConstraints { make in
             make.left.right.equalToSuperview()
             make.top.equalTo(topMargin)
-            make.bottom.equalTo(footerView?.snp.top ?? superview).offset(footerView == nil ? -bottomMargin : 0)
+            make.bottom.equalTo(footerView?.superview != nil ? footerView!.snp.top : superview).offset(footerView == nil ? -bottomMargin : 0)
         }
     }
     
     private func layoutHorizontalScrollView() {
         guard let superview = horizontalScrollView.superview else { return }
         horizontalScrollView.snp.remakeConstraints({ make in
-            make.top.equalTo(menuBar?.snp.bottom ?? headerView?.snp.bottom ?? superview).offset(menuBar != nil ? menuBottomMargin : headerView != nil ? headerBottomMargin : 0)
+            let other: ConstraintRelatableTarget = headerView?.superview != nil ? headerView!.snp.bottom : superview
+            make.top.equalTo(menuBar?.superview != nil ? menuBar!.snp.bottom : other).offset(menuBar != nil ? menuBottomMargin : headerView != nil ? headerBottomMargin : 0)
             make.bottom.equalTo(footerView != nil ? 0 : shouldNested ? 0 : -bottomMargin)
             make.left.right.equalToSuperview()
             if shouldNested {
@@ -375,7 +376,7 @@ open class MenuBarController: UIViewController {
     private func layoutMenuBar() {
         guard let superview = menuBar?.superview else { return }
         menuBar?.snp.remakeConstraints({ make in
-            make.top.equalTo(headerView?.snp.bottom ?? superview).offset(headerView != nil ? headerBottomMargin : shouldNested ? 0 : topMargin)
+            make.top.equalTo(headerView?.superview != nil ? headerView!.snp.bottom : superview).offset(headerView != nil ? headerBottomMargin : shouldNested ? 0 : topMargin)
             make.left.right.equalToSuperview()
             make.width.equalToSuperview()
             if !menuAutoHeight {
